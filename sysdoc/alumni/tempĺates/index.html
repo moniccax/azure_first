@@ -1,0 +1,36 @@
+
+class Alumni(db.Model):
+	__bind_key__ = 'alumni'
+	id = db.Column(db.Integer, primary_key=True)
+	curso_id = db.Column(db.Integer, db.ForeignKey('curso.id'))
+	cpf = db.Column(db.String(255))
+	matricula = db.Column(db.String(255))
+	nome = db.Column(db.String(255))
+	email = db.Column(db.String(255))
+	data_nascimento = db.Column(db.DateTime)
+	ano_ingresso = db.Column(db.Integer)
+	periodo_ingresso = db.Column(db.Integer)
+	data_colacao = db.Column(db.DateTime)
+	def __init__(self, cpf, matricula, nome, email, data_nascimento,ano_ingresso,periodo_ingresso,data_colacao,curso):
+		self.curso=curso;
+		self.cpf=cpf;
+		self.matricula=matricula;
+		self.nome=nome;
+		self.email=email;
+		self.data_nascimento=data_nascimento;
+		self.ano_ingresso=ano_ingresso;
+		self.periodo_ingresso=periodo_ingresso;
+		self.data_colacao=data_colacao;
+	def __repr__(self):
+		return '<Alumni name:%r>' % self.nome
+
+class Curso(db.Model):
+	__bind_key__ = 'alumni'
+	id = db.Column(db.Integer, primary_key=True)
+	nome = db.Column(db.String(255))
+	nivel = db.Column(db.String(255))
+	students = db.relationship('Alumni', backref='curso', lazy='dynamic')
+	def __init__(self, nome):
+		self.nome=nome;
+	def __repr__(self):
+		return '<Curso nome:%r>' % self.nome

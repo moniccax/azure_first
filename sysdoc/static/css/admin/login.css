@@ -1,0 +1,96 @@
+/* Validação dos Formulários*/
+
+.error {
+	color: red !important;
+	margin-top: 0%;
+	font-family: 'ms-semi-bold';
+}
+
+/* Margem entre o título da página e os formulários - login e validação de docs */
+
+.title_margin {
+	margin-top: 5%;
+	margin-bottom: 4%;
+}
+
+.title_color {
+	color: #213f63 !important;
+}
+
+/* Borda entre os formulários de login de validação de docs */
+
+.border_right {
+  border-right: 1px solid #213f63;
+}
+
+@media (max-width:993px) {
+  .border_right {
+    border-right: none;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #213f63;
+  }
+}
+
+/* Margem entre o título do formulário e os inputs */
+
+.form_margin {
+	margin-top: 5%;
+}
+
+/* Inputs do formulário */
+
+.login_p {
+	font-family: 'ms-semi-bold';
+	margin-bottom: 0 !important;
+}
+
+.input_style {
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-family: 'ms-semi-bold';
+}
+
+.input-field label {
+	color: #000;
+	font-family: 'ms-semi-bold';
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 0.5px solid #213f63;
+	-webkit-box-shadow: 0 1px 0 0 #213f63;
+	box-shadow: 0 1px 0 0 #213f63;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label {
+	color: #000;
+	font-family: 'ms-semi-bold';
+}
+
+input[type=text].valid:not(.browser-default),
+input[type=text].valid:not(.browser-default):focus,
+input[type=password].valid:not(.browser-default), 
+input[type=password].valid:not(.browser-default):focus {
+	border-bottom: 1px solid #213f63;
+    -webkit-box-shadow: 0 1px 0 0 #213f63;
+    box-shadow: 0 1px 0 0 #213f63;
+}
+
+/* Mantenha-me contectado */
+
+.rp_color {
+	color: #000;
+	font-family: 'ms-medium';
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+/* Link de "Esqueceu a senha" */
+
+a {
+	color: #000;
+}

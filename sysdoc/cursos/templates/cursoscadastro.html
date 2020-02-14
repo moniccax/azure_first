@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/cursos/cursosCadastro.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<!-- Formulário para cadastro de usuários colaboradores -->
+
+		<div class="container">
+
+			<div class="row title_margin">
+				<div class="col s12">
+					<center>
+						<font class="ms_bold" color="#213f63" size="6">Proposta Cursos Livres</font>
+					</center>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">
+							Em caso de dúvidas relacionadas ao preenchimento deste formulário, entre em contato.<br>
+							E-mail: <a href="mailto:angela@fundacaocefetminas.org.br">angela@fundacaocefetminas.org.br</a><br>
+							Telefone: (31) 3314-5211
+						</font>
+					</div>
+				</div>
+
+			<form action="{{url_for('cursos.send_email_courses')}}" method="post">
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">1 - Solicitante(s):</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="nome" name="nome" type="text" class="validate" required>
+										<label for="nome">Nome</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Identificação da origem do solicitante:
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<select id="campus" name="campus">
+											<option value="" disabled selected>Selecione o Campus</option>
+											<option value="Campus I">Campus I - Belo Horizonte</option>
+											<option value="Campus II - Belo Horizonte">Campus II - Belo Horizonte</option>
+											<option value="Campus III - Leopoldina">Campus III - Leopoldina</option>
+											<option value="Campus IV - Araxá">Campus IV - Araxá</option>
+											<option value="Campus V - Divinópolis">Campus V - Divinópolis</option>
+											<option value="Campus VI - Belo Horizonte">Campus VI - Belo Horizonte</option>
+											<option value="Campus VII - Timóteo">Campus VII - Timóteo</option>
+											<option value="Campus VIII - Varginha">Campus VIII - Varginha</option>
+											<option value="Campus IX - Nepomuceno">Campus IX - Nepomuceno</option>
+											<option value="Campus X - Curvelo">Campus X - Curvelo</option>
+											<option value="Campus XI - Contagem">Campus XI - Contagem</option>
+										</select>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="dept" name="dept" type="text" class="validate">
+										<label for="dept">Departamento/Coordenação</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<input id="telefone" name="telefone" type="text" class="validate" onkeydown="javascript: fMasc( this, mTel );" maxlength="14" required>
+										<label for="telefone">Telefone</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="email" name="email" type="email" class="validate" required>
+										<label for="email">E-mail</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="equipes" name="equipes" class="materialize-textarea"></textarea>
+										<label for="equipes">Equipes participantes</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Instituições externas envolvidas (caso existam) e responsáveis:
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l3">
+										<input id="nome_ext" name="nome_ext[]" type="text" class="validate">
+										<label for="nome_ext">Nome</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="inst_ext" name="inst_ext[]" type="text" class="validate">
+										<label for="inst_ext">Instituição</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="telefone_ext" name="telefone_ext[]" type="text" class="validate" onkeydown="javascript: fMasc( this, mTel );" maxlength="14">
+										<label for="telefone_ext">Telefone</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="email_ext" name="email_ext[]" type="email" class="validate">
+										<label for="email_ext">E-mail</label>
+									</div>
+								</div>
+
+								<div id="nova_instituicao"></div>
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<a class="btn-floating waves-effect waves-light red tooltipped" data-position="right" data-delay="50" data-tooltip="Adicionar Instituição" id="add_nova_inst">
+											<i class="material-icons">add</i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">2 – Dados do Curso:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="titulo_curso" name="titulo_curso" type="text" class="validate" required>
+										<label for="titulo_curso">Título</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="area_conc" name="area_conc" class="materialize-textarea" required></textarea>
+										<label for="area_conc">Área de Concentração</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="apresentacao_curso" name="apresentacao_curso" class="materialize-textarea" required></textarea>
+										<label for="apresentacao_curso">Apresentação do Curso</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="corpo_docente" name="corpo_docente" class="materialize-textarea" required></textarea>
+										<label for="corpo_docente">Corpo Docente</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l3">
+										<font class="ms_medium" size="3" color="#213f63">Modalidade:</font>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="modalidade_curso" type="radio" id="presencial" value="Presencial" required>
+										<label for="presencial">Presencial</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="modalidade_curso" type="radio" id="distancia" value="Distância" required>
+										<label for="distancia">Distância</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="modalidade_curso" type="radio" id="misto" value="Misto" required>
+										<label for="misto">Misto</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<input id="carga_horaria" name="carga_horaria" type="text" class="validate" required>
+										<label for="carga_horaria">Carga Horária</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="sala_lab" name="sala_lab" type="text" class="validate" required>
+										<label for="sala_lab">Sala/Laboratório</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l3">
+										<font class="ms_medium" size="3" color="#213f63">Organização:</font>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="organizacao_curso" type="radio" id="disciplinas" value="Disciplinas" required>
+										<label for="disciplinas">Disciplinas</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="organizacao_curso" type="radio" id="modulos" value="Módulos" required>
+										<label for="modulos">Módulos</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="organizacao_curso" type="radio" id="outros" value="Outros" required>
+										<label for="outros">Outros</label>
+									</div>
+								</div>
+
+								<div id="outros_descricao"></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">3 – Ofertar:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12 m12 l3">
+										<font class="ms_medium" size="3" color="#213f63">Coffe Break:</font>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="coffe_break" type="radio" id="coffe_sim" value="Sim" required>
+										<label for="coffe_sim">Sim</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="coffe_break" type="radio" id="coffe_nao" value="Não" required>
+										<label for="coffe_nao">Não</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l3">
+										<font class="ms_medium" size="3" color="#213f63">Apostila:</font>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="apostila" type="radio" id="apostila_sim" value="Sim" required>
+										<label for="apostila_sim">Sim</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="apostila" type="radio" id="apostila_nao" value="Não" required>
+										<label for="apostila_nao">Não</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l3">
+										<font class="ms_medium" size="3" color="#213f63">Certificado:</font>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="certificado" type="radio" id="certificado_sim" value="Sim" required>
+										<label for="certificado_sim">Sim</label>
+									</div>
+									<div class="col s12 m12 l3">
+										<input name="certificado" type="radio" id="certificado_nao" value="Não" required>
+										<label for="certificado_nao">Não</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="ofertar_outros" name="ofertar_outros" class="materialize-textarea"></textarea>
+										<label for="ofertar_outros">Outros (equipamentos, materiais etc.)</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">4 – Valores:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="valor_hora_aula" name="valor_hora_aula" type="text" class="validate" required>
+										<label for="valor_hora_aula">Valor hora aula ministrada</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="valor_coord" name="valor_coord" type="text" class="validate">
+										<label for="valor_coord">Valor Coordenação (se houver)</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="valor_aluno" name="valor_aluno" type="text" class="validate" required>
+										<label for="valor_aluno">Valor sugerido para custo do curso, por aluno</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">5 – Público Alvo:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="publico_alvo" name="publico_alvo" class="materialize-textarea" required></textarea>
+										<label for="publico_alvo">Público Alvo</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">6 – Canais de Divulgação do Evento:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="canais_divulgacao" name="canais_divulgacao" class="materialize-textarea" required></textarea>
+										<label for="canais_divulgacao">Canais de Divulgação</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">Observações:</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<textarea id="observacoes" name="observacoes" class="materialize-textarea"></textarea>
+										<label for="observacoes">Observações</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<center>
+							<button class="btn waves-effect waves-light generic_btn" type="submit" name="send">
+								Enviar
+							</button>
+						</center>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<script src="/static/js/cursos/cursosCadastro.js"></script>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Select: número de linhas exibidas */
+
+.select_display {
+	display: block;
+  font-family: 'ms-regular';
+}
+
+/* Tabela */
+
+table {
+	margin: 5%;
+	width: 90%;
+	border: 1px solid lightgrey;
+  font-family: 'ms-regular';
+}
+
+@media (max-width:992px) {
+	table.responsive-table {
+		width: auto;
+	}
+}
+
+/* Remove a borda direita do thead */
+
+thead {
+	border-right: 0px;
+}
+
+@media (max-width:992px) {
+	table.responsive-table thead {
+		border-right: 0px;
+	}
+}
+
+/* Ícone: ordenar registros (thead) */
+
+.icon_sort {
+	display: block;
+	float: right;
+	margin-top: -1%;
+}
+
+@media (max-width:992px) {
+	.icon_sort {
+		display: none !important;
+	}
+}
+
+/* Remove as bordas superiores e adiciona as inferiores no tbody */
+
+.tbody_td_border {
+	border-top: 0px;
+	border-bottom: 1px solid lightgrey !important;
+}
+
+.tbody_last_td_border {
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+}
+
+/* Ícones do tbody (status, download, excluir etc.) */
+
+.table_icon_color {
+	color: #000;
+}
+
+/* td e th */
+
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+
+@media (max-width:993px) {
+  td, th {
+    padding: 15px 0px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid lightgrey;
+  }
+
+  th {
+    border:0px;
+  }
+}
+
+/* Paginação da tabela */
+
+.dataTables_paginate {
+  font-family: 'ms-regular';
+}
+
+.dataTables_paginate a:hover {
+  cursor: pointer;
+}
+
+/* Altura das linhas da tabela - Tabela completa */
+
+.row_height {
+  height: auto;
+}
+
+.row_height_icon {
+  height: auto;
+}
+
+.row_padding {
+  padding-top: auto;
+}
+
+@media (max-width:993px) {
+  .row_height {
+    height: 90px;
+  }
+
+  .row_height_icon {
+    height:  50px;
+  }
+
+  .row_padding {
+    padding-top: 27px;
+  }
+}

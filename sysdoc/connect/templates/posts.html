@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Connect -->
+	<link href="/static/css/connect/context_menu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/connect/post.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/connect/add_post.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Header -->
+
+		{% include 'header.html' %}
+
+		<!-- Botão: adicionar post -->
+
+		{% if user.is_authenticated %}
+
+		<div class="div_maior_993">
+			<a id="add_post" class="btn-floating btn-large waves-effect waves-light modal-trigger add_post_btn red" href="#modal_add_post">
+				<i class="material-icons">edit</i>
+			</a>
+			<!--<a id="unlock_posts" class="btn-floating btn-large waves-effect waves-light modal-trigger unlock_posts_btn red" href="{{url_for('connect.filterLockedPosts')}}">
+				<i class="material-icons">lock_open</i>
+			</a>-->
+		</div>
+
+		<div class="div_993">
+			<div class="card bottom_menu">
+				<div class="card-content bottom_menu_card">
+					<div class="row bottom_menu_row">
+						<div class="col s4">
+							<center>
+								<a href="{{url_for('connect.filterUser', id=user.id)}}">
+									<i class="material-icons bottom_menu_icon">person</i>
+								</a>
+							</center>
+						</div>
+						<div class="col s4">
+							<center>
+								<i class="material-icons bottom_menu_icon">notifications_none</i>
+							</center>
+						</div>
+						<div class="col s4">
+							<center>
+								<a class="modal-trigger" href="#modal_add_post">
+									<i class="material-icons bottom_menu_icon">edit</i>
+								</a>
+							</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% endif %}
+
+		<div class="content">
+			<div class="container">
+
+				<!-- Mobile: menu de contextos -->
+
+				{% if categories and categories is defined %}
+
+				<div class="div_993">
+
+					<div class="row category_margin">
+						<div class="col s12">
+							{% if user.is_authenticated %}
+							{% if user.category<=1000 or user_admin %}
+
+							<a class="waves-effect waves-light btn ctx_btn" href="{{url_for('connect.categories_list')}}">
+								<i class="material-icons right">settings</i>Contextos
+							</a>
+
+							{% endif %}
+							{% else %}
+
+							<font class="ms_bold" color="#213f63" size="3">Contextos</font>
+
+							{% endif %}
+						</div>
+					</div>
+
+					<div class="row line_margin">
+						<hr size="0.5" color="#cecece">
+					</div>
+
+					<div class="scroll_ctg">
+
+						<form action="{{url_for('connect.filtercontext')}}" method="POST" id="form_filterCtx_mobile">
+
+							{% for category in categories %}
+
+							<div class="category_position" id="ctg_mobile_{{category.id}}">
+								<center>
+									<div class="category_circle" style="background: {{category.color}}">
+										<font class="ms_bold" color="#fff" size="3">
+											<p>{{category.name[0]}}</p>
+										</font>
+										<div class="category_checked {% if category.id not in selected_ctx %}hide{% endif %}">
+										<i class="material-icons">check_circle</i>
+									</div>
+									</div>
+								</center>
+								<input type="checkbox" class="hide" id="cb_ctg_mobile_{{category.id}}" name="selected_contexts" value="{{category.id}}" {% if category.id in selected_ctx %}checked{% endif %}>
+								<center>
+									<div class="category_name">
+										<font class="ms_medium" color="#000" size="3">
+											<p>{{category.name}}</p>
+										</font>
+									</div>
+								</center>
+							</div>
+
+							{% endfor %}
+
+						</form>
+
+					</div>
+
+					<div class="row">
+						<hr size="0.5" color="#cecece">
+					</div>
+
+				</div>
+
+				{% endif %}
+
+				<div class="row margin_top">
+
+					<!-- Desktop: menu de contextos -->
+
+					{% if categories and categories is defined %}
+
+					<div class="div_maior_993">
+
+						<div class="col s12 m12 l4">
+
+							<div class="ctx_menu_fixed">
+
+								{% if user.is_authenticated %}
+								{% if user.category<=1000 or user_admin %}
+
+								<a class="waves-effect waves-light btn ctx_btn" href="{{url_for('connect.categories_list')}}">
+									<i class="material-icons right">settings</i>Contextos
+								</a>
+
+								{% endif %}
+								{% else %}
+
+								<font class="ms_bold" color="#213f63" size="3">Contextos</font>
+
+								{% endif %}
+
+								<hr>
+
+								<div class="scroll_ctg">
+
+									<form action="{{url_for('connect.filtercontext')}}" method="POST" id="form_filterCtx">
+
+										{% for category in categories %}
+
+										<div class="category" id="ctg_{{category.id}}">
+											<div class="category_circle" style="background: {{category.color}}">
+												<font class="ms_bold" color="#fff" size="3">
+													<p>{{category.name[0]}}</p>
+												</font>
+											</div>
+											<div class="category_checked {% if category.id not in selected_ctx %}hide{% endif %}">
+												<i class="material-icons">check_circle</i>
+											</div>
+											<input type="checkbox" class="hide" id="cb_ctg_{{category.id}}" name="selected_contexts" value="{{category.id}}" {% if category.id in selected_ctx %}checked{% endif %}>
+											<div class="category_name">
+												<font class="ms_bold" color="#000" size="3">
+													<p>{{category.name}}</p>
+												</font>
+											</div>
+										</div>
+
+										{% endfor %}
+
+									</form>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					{% endif %}
+
+					<!-- Posts -->
+
+					<div class="col s12 m12 l8">
+
+						<!-- Mensagem: posts não encontrados -->
+
+						{% if not posts or posts is not defined or posts|length<=0 %}
+
+						<div class="row">
+							<div class="col s12">
+								Não foram encontrados posts!
+							</div>
+						</div>
+
+						{% endif %}
+
+						<!-- Todos os posts -->
+
+						{% for post in posts %}
+
+						{% include "post_card.html" %}
+						{% include "modals_edit_ctx_del.html" %}
+
+						{% endfor %}
+
+					</div>
+
+				</div>
+
+				<!-- Modal - Adicionar Post -->
+
+				{% include "modal_add_post.html" %}
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{%include 'footer.html'%}
+
+		<!-- Script -->
+
+		<script type="text/javascript" src="/static/js/connect/posts.js"></script>
+		<script type="text/javascript" src="/static/js/connect/post_card.js"></script>
+
+		<!-- Mudar slide -->
+
+		<script type="text/javascript">
+			{% for post in posts %}
+
+			{% if post.images is defined and post.images.count()>1 %}
+
+			$('#slide_prev_{{post.id}}').click(function(){
+				$('#slider_{{post.id}}').slider('prev');
+			});
+
+			$('#slide_next_{{post.id}}').click(function(){
+				$('#slider_{{post.id}}').slider('next');
+			});
+
+			{% endif %}
+
+			{% endfor %}
+		</script>
+
+	</div>
+</body>
+</html>

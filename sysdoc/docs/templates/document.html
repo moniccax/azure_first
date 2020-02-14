@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/document.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<!-- Vetor com as cores das posições das assinaturas -->
+
+{% set colors = ['','rgba(237, 28, 36, 0.45)','rgba(0, 162, 232, 0.45)','rgba(34, 177, 76, 0.45)','rgba(255, 242, 0, 0.45)','rgba(184, 61, 186, 0.45)','rgba(195, 195, 195, 0.45)'] %}
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{% include 'header.html' %}
+
+
+		<div class="container">
+
+			<!-- Detalhes do Modelo - Atualização -->
+
+			<div class="row title_margin" id="template_details">
+				<div class="col s12">
+					<center>
+						<font class="ms_bold title_color" size="6">Modelo: {{template.name}}</font>
+					</center>
+				</div>
+			</div>
+
+			<div class="card card_margin">
+				<div class="card-content">
+					<form action="{{url_for('docs.documents_update_template', id=template.id)}}" method="post" enctype=multipart/form-data id="form_doc_template">
+
+						<div class="row">
+							<div class="input-field col s12 m12 l12">
+								<input id="name" name="name" type="text" class="ms_medium" value="{{template.name}}">
+								<label for="name" class="ms_bold">Nome:</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col s12 m12 l12">
+								<input id="description" name="description" type="text" class="ms_medium" value="{{template.description}}">
+								<label for="description" class="ms_bold">Descrição:</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s12 m12 l12">
+								<a download="{{template.file_name}}" href="/{{template.path}}" class="waves-effect waves-light btn generic_btn">
+									<i class="material-icons left">save_alt</i>Modelo Cadastrado
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="file-field input-field col s12">
+								<p>Novo Arquivo Modelo:</p>
+								<br>
+								<div class="btn generic_btn">
+									<span>
+										<i class="material-icons">attach_file</i>
+									</span>
+									<input type="file" name="file" accept=".docx">
+								</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate ms_regular" name="filename" type="text" placeholder=".docx" accept=".docx">
+								</div>
+							</div>
+						</div>
+
+						<div class="row send_cancel_margin">
+							<div class="col s12">
+								<center>
+									<a href="javascript:window.location.reload();" class="btn waves-effect waves-light cancel_btn">
+										Cancelar
+									</a>
+									<button class="btn waves-effect waves-light send_btn" type="submit">
+										Atualizar
+									</button>
+								</center>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!-- Anexos -->
+
+			<div class="row" id="template_attachment">
+				<div class="col s12">
+					<font class="ms_bold title_color" size="4">Anexos:</font>
+				</div>
+			</div>
+
+			<div class="card card_margin">
+				<div class="card-content">
+
+					{% if template.attachments.count() %}
+
+					<table class="bordered striped responsive-table" id="attachments_table" cellspacing="0">
+						<thead>
+							<tr>
+								<th>
+									<font class="ms_bold">NOME</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								<th>
+									<font class="ms_bold">ARQUIVO</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								<th>
+									<font class="ms_bold">EXCLUIR</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for attachment in template.attachments %}
+							<tr>
+								<td class="tbody_td_border">
+									{{attachment.code}}
+								</td>
+								<td class="tbody_last_td_border row_height_icon">
+									<a download="{{attachment.code}}.pdf" href="/{{attachment.path}}">
+										<i class="material-icons left table_icon_color">save_alt</i>
+									</a>
+								</td>
+								<td class="tbody_last_td_border row_height_icon">
+									<a href="{{url_for('docs.remove_attachment', aid=attachment.id, tid=template.id)}}">
+										<i class="material-icons left table_icon_color">delete</i>
+									</a>
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+
+					{% else %}
+
+					<div class="row title_margin">
+						<div class="col s12">
+							<center>
+								<font class="ms_bold" size="4" color="#000">Não existem Anexos cadastrados.</font>
+							</center>
+						</div>
+					</div>
+
+					{% endif %}
+
+					<div class="row">
+
+						<div class="col s6 m6 l6">
+
+							<div>
+								<a href="#modal_add_attachment" class="btn waves-effect waves-light modal-trigger generic_btn add_attachment_btn">Adicionar Anexo</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- MODAL - Adicionar Anexos -->
+
+					<div id="modal_add_attachment" class="modal">
+						<div class="modal-content">
+
+							<div class="div_maior_993">
+								<div class="fixed-action-btn">
+									<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+										<i class="material-icons">clear</i>
+									</a>
+								</div>
+							</div>
+
+							<form action="{{url_for('docs.add_attachment', id=template.id)}}" enctype=multipart/form-data method="post" id="form_addattachment" >
+
+								<div class="row modal_title_margin">
+									<div class="col s12">
+										<center>
+											<font class="ms_bold" size="5">
+												Adicionar Anexo
+											</font>
+										</center>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="name" name="name" type="text" class="ms_bold">
+										<label for="name" class="ms_bold">Nome:</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="file-field input-field col s12">
+										<p>Novo Anexo:</p>
+										<br>
+										<div class="btn generic_btn">
+											<span>
+												<i class="material-icons">attach_file</i>
+											</span>
+											<input type="file" name="file" accept=".pdf">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate ms_regular" name="filename" id="filename" type="text" placeholder=".pdf" accept=".pdf">
+										</div>
+									</div>
+								</div>
+
+								<div class="row send_cancel_margin">
+									<div class="col s12">
+										<center>
+											<a href="javascript:window.location.reload();" class="modal-action modal-close btn waves-effect waves-light cancel_btn">
+												Cancelar
+											</a>
+											<button class="btn waves-effect waves-light send_btn" type="submit">
+												Adicionar
+											</button>
+										</center>
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tabela com os participantes do evento -->
+
+			<div class="row">
+				<div class="col s12">
+					<font class="ms_bold title_color" size="4">Participantes:</font>
+				</div>
+			</div>
+
+			<div class="card card_margin">
+				<div class="card-content">
+
+					{% if template.documents.count() %}
+
+					<table class="bordered striped responsive-table" id="participants_table" cellspacing="0">
+
+						<thead>
+							<tr>
+								{% for field in template.fields %}
+								{% if field.name in ['CPF','NOME','EMAIL'] %}
+								<th>
+									<font class="ms_bold">{{field.name}}</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								{% endif %}
+								{% endfor %}
+								<th>
+									<div class="div_maior_993"><center><font class="ms_bold">STATUS</font></center></div>
+									<div class="div_993"><font class="ms_bold">STATUS</font></div>
+								</th>
+								<th>
+									<div class="div_maior_993"><center><font class="ms_bold">DOWNLOAD</font></center></div>
+									<div class="div_993"><font class="ms_bold">DOWNLOAD</font></div>
+								</th>
+								<th>
+									<div class="div_maior_993"><center><font class="ms_bold">REDEFINIR SENHA</font></center></div>
+									<div class="div_993"><font class="ms_bold">REDEFINIR SENHA</font></div>
+								</th>
+								<th>
+									<div class="div_maior_993"><center><font class="ms_bold">EXCLUIR</font></center></div>
+									<div class="div_993"><font class="ms_bold">EXCLUIR</font></div>
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							{% for line in table %}
+							<tr>
+								{% for value in line %}
+								{% if value.field.name in ['CPF','NOME','EMAIL'] %}
+								<td class="tbody_td_border"> {{value.value}} </td>
+								{% endif %}
+								{% endfor %}
+
+								<td class="tbody_td_border">
+
+									<div class="div_maior_993">
+										<center>
+											{% if line[0].document.available %}
+											<a href="{{url_for('docs.block_single_document', did=line[0].document.id, tid=template.id)}}">
+												<i class="material-icons tooltipped table_icon_color" data-position="left" data-delay="50" data-tooltip="Disponível">done</i>
+											</a>
+											{% else %}
+											<a href="{{url_for('docs.unlock_single_document', did=line[0].document.id, tid=template.id)}}">
+												<i class="material-icons tooltipped table_icon_color" data-position="left" data-delay="50" data-tooltip="Aguardando confirmação">block</i>
+											</a>
+											{% endif %}
+										</center>
+									</div>
+
+									<div class="div_993">
+										{% if line[0].document.available %}
+										<a href="{{url_for('docs.block_single_document', did=line[0].document.id, tid=template.id)}}">
+											<i class="material-icons table_icon_color">done</i>
+										</a>
+										{% else %}
+										<a href="{{url_for('docs.unlock_single_document', did=line[0].document.id, tid=template.id)}}">
+											<i class="material-icons table_icon_color">block</i>
+										</a>
+										{% endif %}
+									</div>
+
+								</td>
+
+								<td class="tbody_td_border">
+									<div class="div_maior_993">
+										<center>
+											<a href="{{url_for('docs.certificate_test', code=line[0].document.code)}}">
+												<i class="material-icons table_icon_color">save_alt</i>
+											</a>
+										</center>
+									</div>
+
+									<div class="div_993">
+										<a href="{{url_for('docs.certificate_test', code=line[0].document.code)}}">
+											<i class="material-icons table_icon_color">save_alt</i>
+										</a>
+									</div>
+								</td>
+
+								<td class="tbody_td_border">
+									<div class="div_maior_993">
+										<center>
+											<a href="{{url_for('admin.reset_password', id=line[0].document.user.id)}}">
+												<i class="material-icons table_icon_color">restore</i>
+											</a>
+										</center>
+									</div>
+
+									<div class="div_993">
+										<a href="{{url_for('admin.reset_password', id=line[0].document.user.id)}}">
+											<i class="material-icons table_icon_color">restore</i>
+										</a>
+									</div>
+								</td>
+
+								<td class="tbody_last_td_border">
+									<div class="div_maior_993">
+										<center>
+											<a class="waves-effect waves-light modal-trigger" id="delete_document{{line[0].document.id}}" href="#modal{{line[0].document.id}}">
+												<i class="material-icons table_icon_color">delete</i>
+											</a>
+										</center>
+									</div>
+
+									<div class="div_993">
+										<a class="waves-effect waves-light modal-trigger" id="delete_document{{line[0].document.id}}" href="#modal{{line[0].document.id}}">
+											<i class="material-icons table_icon_color">delete</i>
+										</a>
+									</div>
+								</td>
+
+							</tr>
+
+							<!-- Modal - CONFIRMAR EXCLUSÃO DE PARTICIPANTES -->
+
+							<div id="modal{{line[0].document.id}}" class="modal">
+								<div class="modal-content">
+
+									<div class="div_maior_993">
+										<div class="fixed-action-btn">
+											<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+												<i class="material-icons">clear</i>
+											</a>
+										</div>
+									</div>
+
+									<font class="ms_bold" size="3">Deseja realmente excluir o participante?</font>
+								</div>
+
+								<div class="modal-footer">
+									<a href="{{url_for('docs.delete_participants', did=line[0].document.id, tid=template.id)}}" class="modal-action modal-close waves-effect waves-green btn-flat ms_medium">Sim</a>
+									<a href="javascript:window.location.reload();" class="modal-action modal-close waves-effect waves-red btn-flat ms_medium">Não</a>
+								</div>
+							</div>
+
+							{% endfor %}
+
+						</tbody>
+
+					</table>
+
+					{% endif %}
+
+					<div class="upload_margin">
+
+						<div class="div_maior_993">
+
+							<!-- Adicionar participantes - upload XLSX -->
+
+							<div class="row">
+
+								<div class="col s1 m7 l7">
+									<form action="{{url_for('docs.upload_participants', id=template.id)}}" method=post enctype=multipart/form-data id="form_add_participants">
+
+										<div class="row {% if not template.fields.count() %}hide{% endif %}">
+											<div class="col s12 m12 12">
+												<p class="sbr_margin">
+													<input name="sbr_table" type="radio" id="sbr_table_1" value="sbr" />
+													<label for="sbr_table_1" class="ms_regular">Sobrescrever (atualiza os dados presentes na tabela).</label>
+												</p>
+												<p class="sbr_margin">
+													<input name="sbr_table" type="radio" id="sbr_table_2" value="add" checked />
+													<label for="sbr_table_2" class="ms_regular">Adicionar (acrescenta novas linhas à tabela).</label>
+												</p>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col s9 m9 l9 file-field input-field">
+												<div class="btn generic_btn attach_file_btn">
+													<span>
+														<i class="material-icons">attach_file</i>
+													</span>
+													<input type="file" name="file" accept=".xlsx">
+												</div>
+												<div class="file-path-wrapper">
+													<input class="file-path validate ms_regular" id="filename" name="filename" type="text" placeholder="Adicionar participantes" accept=".xlsx">
+												</div>
+											</div>
+											<div class="col s3 m3 l3">
+												<button class="btn waves-effect waves-light generic_btn upload_btn" type="submit" name="upload">
+													upload
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<!-- Tabela completa -->
+
+								<div class="col s1 m5 l5">
+
+									{% if template.fields.count() %}
+
+									<div>
+										<a href="{{url_for('docs.full_table', id=template.id)}}" class="btn waves-effect waves-light generic_btn full_table_btn">Tabela Completa</a>
+									</div>
+
+									{% endif %}
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="div_993">
+
+							<form action="{{url_for('docs.upload_participants', id=template.id)}}" method=post enctype=multipart/form-data id="form_add_participants_mobile">
+
+								<div class="row {% if not template.fields.count() %}hide{% endif %}">
+									<div class="col s12 m12 12">
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_1" value="sbr" />
+											<label for="sbr_table_1" class="ms_regular">Sobrescrever (atualiza os dados presentes na tabela).</label>
+										</p>
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_2" value="add" checked />
+											<label for="sbr_table_2" class="ms_regular">Adicionar (acrescenta novas linhas à tabela).</label>
+										</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12 file-field input-field">
+										<div class="btn generic_btn">
+											<span>
+												<i class="material-icons">attach_file</i>
+											</span>
+											<input type="file" name="file" accept=".xlsx">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate ms_regular" type="text" id="filename" name="filename" placeholder="Adicionar participantes" accept=".xlsx">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<center>
+											<button class="btn waves-effect waves-light generic_btn" type="submit" name="upload">
+												upload
+											</button>
+										</center>
+									</div>
+								</div>
+							</form>
+
+							{% if template.fields.count() %}
+
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<center>
+										<a href="{{url_for('docs.full_table', id=template.id)}}" class="btn waves-effect waves-light generic_btn full_table_btn_993">
+											Tabela Completa
+										</a>
+									</center>
+								</div>
+							</div>
+
+							{% endif %}
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Assinaturas -->
+
+			<div class="row" id="template_sign">
+				<div class="col s12">
+					<font class="ms_bold title_color" size="4">Assinaturas:</font>
+				</div>
+			</div>
+
+			<div class="row sign_margin">
+
+				{% for temp_signature in template.signatures %}
+
+				<a class="modal-trigger sign_color" href="#modal_edit_sign{{temp_signature.signature.user.id}}" id="sign{{temp_signature.signature.user.id}}">
+					<div class="col s12 m12 l4">
+						<div class="sign_card">
+							<i class="material-icons left sign_position" style="color:{{colors[temp_signature.signature_order]}};">
+								lens
+							</i>
+
+							{% if temp_signature.authorized %}
+
+							<i class="material-icons tooltipped sign_authorization_ok" data-position="bottom" data-delay="50" data-tooltip="Autorizada!">check_circle</i>
+
+							{% else %}
+
+							<i class="material-icons tooltipped sign_authorization" data-position="bottom" data-delay="50" data-tooltip="Aguardando autorização!">warning</i>
+
+							{% endif %}
+
+							<center>
+								<font class="sign_user_name_auth" size="3">
+									{{temp_signature.signature.user.name.split(' ')[0]}} {{temp_signature.signature.user.name.split(' ')[-1]}}
+								</font>
+							</center>
+							<center>
+								<img src="/{{temp_signature.signature.path}}" class="sign_img_margin" width="100%" height="auto">
+							</center>
+						</div>
+					</div>
+				</a>
+
+				<!-- Modal - EDITAR ASSINATURA -->
+
+				<div id="modal_edit_sign{{temp_signature.signature.user.id}}" class="modal modal-fixed-footer">
+
+					<div class="modal-content">
+
+						<div class="div_maior_993">
+							<div class="fixed-action-btn">
+								<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+									<i class="material-icons">clear</i>
+								</a>
+							</div>
+						</div>
+
+						<form action="{{url_for('docs.edit_sign', sid=temp_signature.signature.id, tid=template.id)}}" method="post" id="form_doc_editSign">
+
+							<div class="row modal_title_margin">
+								<div class="col s12">
+									<center>
+										<font class="ms_bold" size="5">
+											Assinatura - {{temp_signature.signature.user.name}}
+										</font>
+									</center>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="col s12 m12 l8">
+									<center>
+										<font class="ms_bold" color="#9e9e9e" size="3">
+											Selecione a posição da assinatura no documento:
+										</font>
+									</center>
+								</div>
+							</div>
+
+							<div class="row position_margin">
+								<div class="div_maior_993 col l3"></div>
+
+								<div class="col s4 m4 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_red" id="sign_red{{temp_signature.signature_id}}" onClick="updateHiddenField(1,'color_sign{{temp_signature.signature_id}}', '{{temp_signature.signature_id}}')">
+
+												{% if temp_signature.signature_order==1 %}
+
+												<i class="material-icons position_icon" id="check_red{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_red{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+								<div class="col s4 m1 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_blue" id="sign_blue{{temp_signature.signature_id}}" onClick="updateHiddenField(2,'color_sign{{temp_signature.signature_id}}', {{temp_signature.signature_id}})">
+
+												{% if temp_signature.signature_order==2 %}
+
+												<i class="material-icons position_icon" id="check_blue{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_blue{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+								<div class="col s4 m1 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_green" id="sign_green{{temp_signature.signature_id}}" onClick="updateHiddenField(3,'color_sign{{temp_signature.signature_id}}', {{temp_signature.signature_id}})">
+
+												{% if temp_signature.signature_order==3 %}
+
+												<i class="material-icons position_icon" id="check_green{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_green{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+								<div class="col s4 m1 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_yellow" id="sign_yellow{{temp_signature.signature_id}}" onClick="updateHiddenField(4,'color_sign{{temp_signature.signature_id}}', {{temp_signature.signature_id}})">
+
+												{% if temp_signature.signature_order==4 %}
+
+												<i class="material-icons position_icon" id="check_yellow{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_yellow{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+								<div class="col s4 m1 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_pink" id="sign_pink{{temp_signature.signature_id}}" onClick="updateHiddenField(5,'color_sign{{temp_signature.signature_id}}', {{temp_signature.signature_id}})">
+
+												{% if temp_signature.signature_order==5 %}
+
+												<i class="material-icons position_icon" id="check_pink{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_pink{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+								<div class="col s4 m1 l1">
+									<center>
+										<p>
+											<a class="btn-floating btn-large waves-effect waves-light position_grey" id="sign_grey{{temp_signature.signature_id}}" onClick="updateHiddenField(6,'color_sign{{temp_signature.signature_id}}', {{temp_signature.signature_id}})">
+
+												{% if temp_signature.signature_order==6 %}
+
+												<i class="material-icons position_icon" id="check_grey{{temp_signature.signature_id}}">done</i>
+
+												{% else %}
+
+												<i class="material-icons position_icon hide" id="check_grey{{temp_signature.signature_id}}">done</i>
+
+												{%endif%}
+											</a>
+										</p>
+									</center>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<select class="cpfsign ms_medium" disabled>
+										<option value="" selected disabled>Selecione a assinatura</option>
+										{%for usersign in userList%}
+										{%if temp_signature.signature.user.cpf == usersign.cpf%}
+										<option value="{{usersign.cpf}}" selected>{{usersign.name}}</option>
+										{%else%}
+										<option value="{{usersign.cpf}}">{{usersign.name}}</option>
+										{%endif%}
+										{%endfor%}
+									</select>
+									<label class="ms_bold">Assinado por:</label>
+								</div>
+							</div>
+
+							<input type="hidden" name="color_sign{{temp_signature.signature_id}}" id="color_sign{{temp_signature.signature_id}}" value="{{temp_signature.signature_order}}">
+
+							<div class="row send_cancel_margin">
+								<div class="col s12">
+									<center>
+										<a href="javascript:window.location.reload();" class="modal-action modal-close btn waves-effect waves-light cancel_btn">
+											Cancelar
+										</a>
+										<button class="btn waves-effect waves-light send_btn" type="submit">
+											Enviar
+										</button>
+									</center>
+								</div>
+							</div>
+
+						</form>
+
+					</div>
+
+					<div class="modal-footer">
+						<a href="{{url_for('docs.delete_sign', sid=temp_signature.signature.id, tid=template.id)}}" class="btn waves-effect waves-light delete_btn delete_sign_btn">
+							<i class="material-icons left">delete</i>Excluir Assinatura
+						</a>
+					</div>
+
+				</div>
+
+				{% endfor %}
+
+				<div class="col s12 m12 l3">
+					<a class="waves-effect waves-light btn-floating btn modal-trigger tooltipped red add_sign_btn" data-position="right" data-delay="50" data-tooltip="Adicionar Assinatura" href="#modalAssinaturas">
+						<i class="material-icons add_sign_icon">add</i>
+					</a>
+				</div>
+
+			</div>
+
+			<!-- Modal - ADICIONAR MAIS ASSINATURAS -->
+
+			<div id="modalAssinaturas" class="modal modal-fixed-footer">
+				<div class="modal-content">
+
+					<div class="div_maior_993">
+						<div class="fixed-action-btn">
+							<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+								<i class="material-icons">clear</i>
+							</a>
+						</div>
+					</div>
+
+					<form action="{{url_for('docs.add_sign', id=template.id)}}" method="post" id="form_doc_addSign" onsubmit="return validateSign()">
+
+						<div class="row modal_title_margin">
+							<div class="col s12">
+								<center>
+									<font class="ms_bold" size="5">
+										Adicionar Assinatura
+									</font>
+								</center>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="col s12 m12 l8">
+								<center>
+									<font class="ms_bold" color="#9e9e9e" size="3">
+										Selecione a posição da assinatura no documento:
+									</font>
+								</center>
+							</div>
+						</div>
+
+						<div class="row position_margin">
+							<div class="div_maior_993 col l3"></div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_red" id="sign_red">
+											<i class="material-icons position_icon hide" id="check_red">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_blue" id="sign_blue">
+											<i class="material-icons position_icon hide" id="check_blue">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_green" id="sign_green">
+											<i class="material-icons position_icon hide" id="check_green">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_yellow" id="sign_yellow">
+											<i class="material-icons position_icon hide" id="check_yellow">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_pink" id="sign_pink">
+											<i class="material-icons position_icon hide" id="check_pink">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+							<div class="col s4 m1 l1">
+								<center>
+									<p>
+										<a class="btn-floating btn-large waves-effect waves-light position_grey" id="sign_grey">
+											<i class="material-icons position_icon hide" id="check_grey">done</i>
+										</a>
+									</p>
+								</center>
+							</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="input-field col s12 m12 l8">
+								<select class="cpfsign ms_medium" name="cpf_sign" id="cpf_sign">
+									<option value="" selected disabled>Selecione a assinatura</option>
+									{%for usersign in userList%}
+									<option value="{{usersign.cpf}}">{{usersign.name}}</option>
+									{%endfor%}
+								</select>
+								<label class="ms_bold">Assinado por:</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="col s12 m12 l10">
+								<font class="ms_medium" color="red" size="3">
+									<p class="hide" id="errorSign">Preencha todos os campos!</p>
+								</font>
+							</div>
+						</div>
+
+						<input type="hidden" name="color_sign" id="color_sign">
+
+						<div class="row send_cancel_margin">
+							<div class="col s12">
+								<center>
+									<a href="javascript:window.location.reload();" class="modal-action modal-close btn waves-effect waves-light cancel_btn">
+										Cancelar
+									</a>
+									<button class="btn waves-effect waves-light send_btn" type="submit">
+										Enviar
+									</button>
+								</center>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+
+			<!-- Publicar/desbloquear documentos -->
+
+			<div class="row publish_document">
+
+				<div class="div_maior_993">
+					<div class="col s12">
+						<center>
+							<a class="waves-effect waves-light btn red download_btn" href="{{url_for('docs.downloadzip', id=template.id)}}">
+								Download de Documentos
+							</a>
+							<a class="waves-effect waves-light btn red publish_btn" href="{{url_for('docs.unlock_documents', id=template.id)}}">
+								Publicar Documentos
+							</a>
+						</center>
+					</div>
+				</div>
+
+				<div class="div_993 publish_document_993">
+					<div class="col s12">
+						<center>
+							<a class="waves-effect waves-light btn red download_btn" href="{{url_for('docs.downloadzip', id=template.id)}}">
+								Download de Documentos
+							</a>
+						</center>
+						<div class="col s12">
+							<center>
+								<a class="waves-effect waves-light btn red publish_btn" href="{{url_for('docs.unlock_documents', id=template.id)}}">
+									Publicar Documentos
+								</a>
+							</center>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+		<script src="/static/js/docs/document.js"></script>
+
+	</div>
+</body>
+</html>

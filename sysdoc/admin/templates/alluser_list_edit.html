@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/admin/user_list_edit.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+
+
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{% include 'header.html' %}
+
+		<!-- Tabela com todos os colaboradores cadastrados -->
+
+		<div class="content">
+
+			<div class="container">
+
+				<div class="row title_margin">
+					<center>
+						<font class="ms_bold title_color" size="6">Usuários</font>
+					</center>
+				</div>
+
+				{% if users.count() %}
+
+				<div class="card card_padding">
+					<table class="bordered striped responsive-table" id="dataTable" cellspacing="0">
+						<thead>
+							<tr>
+								<th>
+									<font class="ms_bold">NOME</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								<th>
+									<font class="ms_bold">CPF</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								<th>
+									<font class="ms_bold">E-MAIL</font>
+									<font color="#aaaaaa">
+										<i class="material-icons icon_sort">swap_vert</i>
+									</font>
+								</th>
+								<th>
+									<div class="div_maior_993">
+										<center><font class="ms_bold">STATUS</font></center>
+									</div>
+									<div class="div_993">
+										<font class="ms_bold">STATUS</font>
+									</div>
+								</th>
+								<th>
+									<div class="div_maior_993">
+										<center><font class="ms_bold">CATEGORIA</font></center>
+									</div>
+									<div class="div_993">
+										<font class="ms_bold">CATEGORIA</font>
+									</div>
+								</th>
+								<th>
+									<div class="div_maior_993">
+										<center><font class="ms_bold">EDITAR</font></center>
+									</div>
+									<div class="div_993">
+										<font class="ms_bold">EDITAR</font>
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for User in users %}
+							<tr>
+								<td class="tbody_td_border">
+									{{User.name.split(' ')[0]}} {{User.name.split(' ')[-1]}}
+								</td>
+								<td class="tbody_td_border"> {{User.cpf}} </td>
+								<td class="tbody_td_border"> {{User.email}} </td>
+								<td class="tbody_td_border">
+									<div class="div_maior_993">
+										<center>
+											{% if User.blocked %}
+											<a href="{{url_for('admin.unlock_employee', id=User.id)}}">
+												<i class="material-icons table_icon_color tooltipped" data-position="left" data-delay="50" data-tooltip="Bloqueado">block</i>
+											</a>
+											{% else %}
+											<a href="{{url_for('admin.block_employee', id=User.id)}}">
+												<i class="material-icons table_icon_color tooltipped" data-position="left" data-delay="50" data-tooltip="Ativo">done</i>
+											</a>
+											{% endif %}
+										</center>
+									</div>
+									<div class="div_993">
+										{% if User.blocked %}
+										<a href="{{url_for('admin.unlock_employee', id=User.id)}}">
+											<i class="material-icons table_icon_color">block</i>
+										</a>
+										{% else %}
+										<a href="{{url_for('admin.block_employee', id=User.id)}}">
+											<i class="material-icons table_icon_color">done</i>
+										</a>
+										{% endif %}
+									</div>
+								</td>
+								<td class="tbody_td_border">
+									{% if User.category == 0 %}
+									Administrador
+									{% endif %}
+									{% if User.category == 1000 %}
+									Suporte
+									{% endif %}
+									{% if User.category == 2000 %}
+									Colaborador
+									{% endif %}
+									{% if User.category == 2500 %}
+									Assinante
+									{% endif %}
+									{% if User.category == 3000 %}
+									Usuário
+									{% endif %}
+								</td>
+								<td class="tbody_last_td_border">
+									<div class="div_maior_993">
+										<center>
+											<a class="waves-effect waves-light modal-trigger" id="edit{{User.id}}" href="#modal{{User.id}}">
+												<i class="material-icons table_icon_color">edit</i>
+											</a>
+										</center>
+									</div>
+									<div class="div_993">
+										<a class="waves-effect waves-light modal-trigger" id="edit{{User.id}}" href="#modal{{User.id}}">
+											<i class="material-icons table_icon_color">edit</i>
+										</a>
+									</div>
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+
+				</div>
+
+				<!-- Modal - EDIÇÃO DE DADOS DOS COLABORADORES -->
+
+				{% for User in users %}
+
+				<div id="modal{{User.id}}" class="modal modal-fixed-footer">
+					<div class="modal-content">
+
+						<div class="div_maior_993">
+							<div class="fixed-action-btn">
+								<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+									<i class="material-icons">clear</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row modal_title_margin">
+							<div class="col s12">
+								<center>
+									<font class="ms_bold" size="6" color="#000">{{User.name}}</font>
+								</center>
+							</div>
+						</div>
+
+						<!-- Dados do colaborador -->
+
+						<form action="{{url_for('admin.update_employee', id=User.id)}}" method="post" id="form_employee_update{{User.id}}">
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="name" name="name" type="text" class="ms_bold" value="{{User.name}}">
+									<label for="name" class="ms_bold">Nome:</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="cpf" name="cpf" type="text" class="ms_bold" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" value="{{User.cpf}}">
+									<label for="cpf" class="ms_bold">CPF:</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="email" name="email" type="text" class="ms_bold" value="{{User.email}}">
+									<label for="email" class="ms_bold">E-mail:</label>
+								</div>
+							</div>
+
+							<div class="row modal_btn_margin">
+								<div class="col s12">
+									<center>
+										<a href="javascript:window.location.reload();" class="modal-action modal-close btn waves-effect waves-light cancel_btn">
+											Cancelar
+										</a>
+										<button class="btn waves-effect waves-light send_btn" type="submit">
+											Atualizar
+										</button>
+									</center>
+								</div>
+							</div>
+
+						</form>
+
+						<hr class="modal_btn_margin">
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="col s12 m12 l8">
+								<a href="{{url_for('admin.reset_password', id=User.id)}}" class="btn waves-effect waves-light emp_button">
+									Redefinir Senha<i class="material-icons left">lock_open</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="col s12 m12 l8">
+								<a href="{{url_for('admin.delete_employee', id=User.id)}}" class="btn waves-effect waves-light emp_button">
+									Excluir Usuário<i class="material-icons left">delete</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col l2"></div>
+							<div class="col s12 m12 l8">
+								{% if User.blocked %}
+
+								<a href="{{url_for('admin.unlock_employee', id=User.id)}}" class="btn waves-effect waves-light emp_button">
+									Desbloquear Usuário<i class="material-icons left">done</i>
+								</a>
+
+								{% else %}
+
+								<a href="{{url_for('admin.block_employee', id=User.id)}}" class="btn waves-effect waves-light emp_button">
+									Bloquear Usuário<i class="material-icons left">block</i>
+								</a>
+
+								{% endif %}
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				{% endfor %}
+
+				{% else %}
+
+				<div class="row">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="4">Não existem colaboradores cadastrados.</font>
+						</center>
+					</div>
+				</div>
+
+				{% endif %}
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!--  Scripts-->
+
+		<script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+		<script src="/static/js/sb-admin-datatables.min.js"></script>
+		<script src="/static/js/table.js"></script>
+		<script src="/static/js/admin/user_list_edit.js"></script>
+		<script src="/static/js/admin/cpf_mask.js"></script>
+
+		<script type="text/javascript">
+			{% for User in users %}
+			$("#form_employee_update{{User.id}}").validate({
+				rules:{
+					name:{
+						required:true
+					},
+					cpf:{
+						required:true,
+						minlength: 14
+					},
+					email:{
+						required:true,
+						email:true
+					},
+					signaturefilename:{
+						required:true
+					}
+				},
+				messages:{
+					name:{
+						required:"Informe o nome do colaborador!"
+					},
+					cpf:{
+						required:"Informe o CPF do colaborador!",
+						minlength: "CPF inválido!"
+					},
+					email:{
+						required:"Informe o E-mail do colaborador",
+						email:"E-mail inválido!"
+					},
+					signaturefilename:{
+						required:"É obrigatório anexar um arquivo!"
+					}
+				}
+			});
+
+			$("#form_sign_update{{User.id}}").validate({
+				rules:{
+					signaturefilename:{
+						required:true
+					}
+				},
+				messages:{
+					signaturefilename:{
+						required:"É obrigatório anexar um arquivo!"
+					}
+				}
+			});
+			{% endfor %}
+		</script>
+
+	</div>
+</body>
+</html>

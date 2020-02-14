@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/cursos/cursosCadastro.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<!-- Formulário para cadastro de usuários colaboradores -->
+
+		<div class="container">
+
+			<div class="row title_margin">
+				<div class="col s12">
+					<center>
+						<font class="ms_bold" color="#213f63" size="6">Formulário de viagem</font>
+					</center>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col s12">
+						<p>
+							Ao preencher este formulário será gerado um documento pdf do termo com seus dados para você apenas assinar e submete-lo aqui:
+						</p>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col s12">
+						<form method="post" enctype="multipart/form-data" action="{{url_for('admin.formularioreceive')}}">
+							<input id="nome" name="nome" type="text" value="{{nome}}" readonly="readonly" required hidden>
+							<div class="file-field input-field">
+				      <div class="btn">
+				        <span>Arquivo</span>
+				        <input name="file" type="file" accept="application/pdf">
+				      </div>
+				      <div class="file-path-wrapper">
+				        <input class="file-path validate" name=filename placeholder=".pdf" type="text">
+				      </div>
+				    </div>
+						<div class="col s12">
+							<center>
+								<button class="btn waves-effect waves-light generic_btn" type="submit" name="send">
+									Enviar
+								</button>
+							</center>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<p align="justify">
+						O presente formulário apresenta informações sobre formas de deslocamento, hospedagem e alimentação para custeio da sua participação na Prova de Desempenho Didático (PDD) do Concurso de Docentes do IF SUDESTE MG. Favor preencher com atenção e esclarecer quaisquer dúvidas pelo WhatsApp, antes de devolvê-lo assinado, até o dia 19/09, às 12h.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<ul style="list-style-type: disc;">
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								O planejamento será feito a partir do nº de convocados, geral e por área, considerando as regras de classificação para inscritos nas vagas de ampla concorrência e reservas (pretos e pardos/pessoa com deficiência). O edital prevê a convocação de 8 candidatos por tipo de vaga – VER QUADRO 2.2 – Edital 003/2018 (disponível em: https://concurso.fundacaocefetminas.org.br/site/processo_seletivo.aspx).
+							</p>
+						</li>
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								Para cada 8 candidatos convocados teremos 1 dia de avaliações, com início às 9h e término às 18h (aproximadamente) e intervalos para deliberações.
+							</p>
+						</li>
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								As avaliações serão concentradas nos dias 05 e 06/10, sábado e domingo, tendo em vista a indisponibilidade de salas de aulas de segunda a sexta-feira. As provas serão realizadas, a princípio, na UFJF.
+							</p>
+						</li>
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								No primeiro dia programado para início das avaliações a banca deverá se apresentar com 1 hora de antecedência para orientações gerais e esclarecimentos de eventuais dúvidas.
+							</p>
+						</li>
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								O roteiro de viagem e a programação completa para a PDD serão informados em ocasião mais próxima à data da viagem, assim como as orientações sobre as avaliações. Os professores não precisam se preocupar com nada além de seguir as nossas orientações e tirarem suas dúvidas pelo WhatsApp.
+							</p>
+						</li>
+						<li style="list-style-type: disc;">
+							<p align="justify">
+								No formulário a seguir cada professor deverá confirmar os dados já informados e indicar sua opção de deslocamento, traslado e hospedagem:
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">
+							Informações
+						</font>
+					</div>
+				</div>
+
+			<form action="{{url_for('admin.formularioprint')}}" method="post">
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="nome" name="nome" type="text" class="validate" value="{{nome}}" readonly="readonly" required>
+										<label for="nome">Nome</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="area" name="area" type="text" class="validate" value="{{area}}" readonly="readonly" required>
+										<label for="area">Area</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="funcao" name="funcao" type="text" class="validate" value="{{funcoes}}" readonly="readonly" required>
+										<label for="funcao">Função</label>
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="vinculo" name="vinculo" type="text" class="validate" value="{{vinculo}}" required>
+										<label for="vinculo">Vínculo institucional atual</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">
+							Dados da cidade de origem na data prevista para a viagem:
+						</font>
+					</div>
+				</div>
+
+				<p align="justify" >OBS: passível de edição, caso os dados sejam diferentes do endereço residencial já informado.</p>
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="endereco" name="endereco" type="text" class="validate" value="{{endereco}}" required>
+										<label for="endereco">Endereço Residencial</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l3">
+										<input id="bairro" name="bairro" type="text" class="validate" value="{{bairro}}" required>
+										<label for="bairro">Bairro</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="municipio" name="municipio" type="text" class="validate" value="{{municipio}}" required>
+										<label for="municipio">Municipio</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="uf" name="uf" type="text" class="validate" value="{{uf}}" required>
+										<label for="uf">UF</label>
+									</div>
+									<div class="input-field col s12 m12 l3">
+										<input id="cep" name="cep" type="text" class="validate" value="{{cep}}" required>
+										<label for="cep">CEP</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" color="#213f63" size="3">
+							Opção de deslocamento - Origem / Destino:
+						</font>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div>
+									<div style="margin-bottom: 30px;">
+							      <input name="deslocamento_od" type="radio" id="op_1" value="op_1" onclick="requiredeslocamento(false,false)"/>
+							      <label for="op_1">1. Ônibus Semileito (Com seguro viagem)</label>
+										<p>Forma de custeio: reembolso de despesas, mediante apresentação dos bilhetes de viagens (com o valor de fato pago).</p>
+									</div>
+									<div style="margin-bottom: 30px;">
+							      <input name="deslocamento_od" type="radio" id="op_2" value="op_2" onclick="requiredeslocamento(true,false)"/>
+							      <label for="op_2">2. Veículo Próprio – Individual </label>
+										<p>Forma de custeio: reembolso de despesas, mediante apresentação de comprovante de abastecimento de combustível e indicação de previsão de abastecimento.
+										Indicar previsão de litros abastecidos (ida; volta e traslados):</p>
+										<div class="input-field col s12 m12 l12">
+											<input id="deslocamento_od_op_2_comp" name="deslocamento_od_op_2_comp" type="text" class="validate">
+											<label for="deslocamento_od_op_2_comp">Previsão de litros de combustivel</label>
+										</div>
+										<p>OBS: Na opção pelo veículo próprio, o colaborador fica desde já ciente que é de sua exclusiva responsabilidade todo e qualquer risco decorrente da utilização do automóvel, condição a que o colaborador declara conhecer e anuir.</p>
+									</div>
+									<div style="margin-bottom: 30px;">
+							      <input name="deslocamento_od" type="radio" id="op_3" value="op_3" onclick="requiredeslocamento(false,true)"/>
+							      <label for="op_3">3. Carona c/ outro membro da banca/instituto </label>
+										<p>Indicar nome e área do Professor(a) condutor(a):</p>
+										<div class="input-field col s12 m12 l12">
+											<input id="deslocamento_od_op_3_comp" name="deslocamento_od_op_3_comp" type="text" class="validate">
+											<label for="deslocamento_od_op_3_comp">Professor condutor</label>
+										</div>
+										<p>Forma de Custeio: comprovante enviado pelo condutor(a).</p>
+									</div>
+									<div style="margin-bottom: 30px;">
+							      <input name="deslocamento_od" type="radio" id="op_4" value="op_4" onclick="requiredeslocamento(false,false)"/>
+							      <label for="op_4">4. Veículo locado pela FCM</label>
+										<p>Van, ônibus ou micro-ônibus, para residentes nas cidades de BH, Contagem e Betim.</p>
+										<p>Forma de custeio: faturamento FCM.</p>
+									</div>
+							    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Tipos de translados:
+										</font>
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="col s12">
+										<ul style="list-style-type: disc;">
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													residência/rodoviária origem – Aplicativo
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													rodoviária Juiz de Fora/hotel – Aplicativo
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													hotel/local de prova/hotel – Veículo FCM
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													hotel/rodoviária Juiz de Fora – Aplicativo
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													rodoviária origem/residência – Aplicativo
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div>
+									<p>
+							      <input name="translado" type="checkbox" id="translado_op_1" value="translado_op_1"/>
+							      <label for="translado_op_1">1. via Aplicativos de Transportes (Uber; 99 Pop; Cabify; etc.) ou Taxi;</label>
+
+									</p>
+									<p>
+							      <input name="translado" type="checkbox" id="translado_op_2" value="translado_op_2"/>
+							      <label for="translado_op_2">2. via veículo próprio – individual;</label>
+									</p>
+									<p>
+							      <input name="translado" type="checkbox" id="translado_op_3" value="translado_op_3"/>
+							      <label for="translado_op_3">3. via carona c/ outro membro da banca/instituto;</label>
+									</p>
+									<p>
+							      <input name="translado" type="checkbox" id="translado_op_4" value="translado_op_4"/>
+							      <label for="translado_op_4">4. via veículo locado pela FCM;</label>
+									</p>
+							    </div>
+									<p>Forma de custeio: reembolso de despesas, mediante apresentação de comprovantes com as informações do deslocamento.</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Opção de hospedagem
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<ul style="list-style-type: disc;">
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Os professores, não residentes em Juiz de Fora, que optarem pela hospedagem em hotel poderão realizar o check-in no dia anterior à data agendada para início das provas, conforme regras do hotel. O check-out deverá ser realizado na data prevista para retorno à cidade de origem.
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													As opções de hospedagem poderão ser em quartos duplos ou triplos, compartilhados com membros da banca ou professores conhecidos do mesmo instituto.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div>
+									<p>
+							      <input name="hospedagem" type="radio" id="hospedagem_op_1" value="hospedagem_op_1" onclick="requirehospedagem(true,false)"/>
+							      <label for="hospedagem_op_1">Hotel</label>
+										<p>Entrada um dia antes da data agendada para início das avaliações e saída no mesmo dia de encerramento das avaliações.</p>
+										<div class="input-field col s12 m12 l12">
+											<input id="hospedagem_op_1_comp" name="hospedagem_op_1_comp" type="text" class="validate">
+											<label for="hospedagem_op_1_comp">Companheiro(a) de quarto</label>
+										</div>
+									</p>
+									<p>
+							      <input name="hospedagem" type="radio" id="hospedagem_op_2" value="hospedagem_op_2" onclick="requirehospedagem(false,true)"/>
+							      <label for="hospedagem_op_2">Hotel</label>
+										<p>Entrada um dia antes da data agendada para início das avaliações e saída no dia posterior ao término das avaliações.</p>
+										<div class="input-field col s12 m12 l12">
+											<input id="hospedagem_op_2_comp" name="hospedagem_op_2_comp" type="text" class="validate">
+											<label for="hospedagem_op_2_comp">Companheiro(a) de quarto</label>
+										</div>
+									</p>
+									<p>
+							      <input name="hospedagem" type="radio" id="hospedagem_op_3" value="hospedagem_op_3" onclick="requirehospedagem(false,false)"/>
+							      <label for="hospedagem_op_3">Não preciso</label>
+										<p>Hospedagem em residência de parentes, amigos e outros.</p>
+									</p>
+							    </div>
+								</div>
+								<p>Forma de custeio: faturamento Fundação CEFETMINAS – somente o valor da hospedagem. </p>
+								<p>OBS: Outros itens consumidos deverão ser pagos no momento do check out e não serão reembolsados. </p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Opção de alimentação
+										</font>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<ul style="list-style-type: disc;">
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Café da manhã no hotel (incluso na hospedagem), antes da saída programada para a prova.
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Serão fornecidas refeições nos intervalos das avaliações (lanches, manhã e tarde, e almoço), além de café e água, à vontade.
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Será fornecida ajuda de custo para o jantar, conforme dias de provas, via depósito bancário.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Regime alimentar vegetariano
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div>
+									<p>
+							      <input name="alimentacao" type="radio" id="alimentacao_sim" value="alimentacao_sim"/>
+							      <label for="alimentacao_sim">Sim</label>
+									</p>
+									<p>
+							      <input name="alimentacao" type="radio" id="alimentacao_nao" value="alimentacao_nao"/>
+							      <label for="alimentacao_nao">Não</label>
+									</p>
+							    </div>
+								</div>
+								<p>Forma de custeio: faturamento Fundação CEFETMINAS.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Dados para seguro viagem
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="cpf" name="cpf" type="text" class="validate" value="{{cpf}}" required>
+										<label for="cpf">CPF</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l4">
+										<input id="datanasc" name="datanasc" type="text" class="datepicker" required>
+										<label for="datanasc">Data de nascimento</label>
+									</div>
+									<div class="input-field col s12 m12 l4">
+										<input id="rg" name="rg" type="text" class="validate" value="{{rg}}" required>
+										<label for="rg">RG</label>
+									</div>
+									<div class="input-field col s12 m12 l4">
+										<input id="orgexp" name="orgexp" type="text" class="validate" value="{{orgexp}}" required>
+										<label for="orgexp">Orgão expeditor</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<input id="cel1" name="cel1" type="text" class="validate" value="{{cel1}}" required>
+										<label for="cel1">Celular</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="email" name="email" type="text" class="validate" value="{{email}}" required>
+										<label for="email">Email</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l12">
+										<input id="estadocivil" name="estadocivil" type="text" class="validate" value="{{estadocivil}}" required>
+										<label for="estadocivil">Estado civil</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row card_margin">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_medium" color="#213f63" size="3">
+											Atenção! Sobre os comprovantes
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<ul style="list-style-type: disc;">
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Os comprovantes não poderão conter rasuras ou emendas.
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Nos comprovantes deverão constar, obrigatoriamente, os dados: Fundação CEFETMINAS: CNPJ: 002789120001-20, horários de deslocamentos e informações sobre o percurso (origem/destino). Os deslocamentos só serão custeados para o trabalho de avaliação da PDD. Deslocamentos não vinculados à realização da PDD deverão ser pagos pelo professor e não serão reembolsados.
+												</p>
+											</li>
+											<li style="list-style-type: disc;">
+												<p align="justify">
+													Os comprovantes podem ser digitalizados e enviados, de forma organizada, após conclusão da PDD. O reembolso será efetivado, via depósito bancário, previsto para até 10 dias uteis, após envio e validação dos comprovantes.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<input id="banco" name="banco" type="text" class="validate" value="{{banco}}" required>
+										<label for="banco">Banco</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="nbanco" name="nbanco" type="text" class="validate" value="{{nbanco}}"required>
+										<label for="nbanco">Número do banco</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 m12 l6">
+										<input id="agencia" name="agencia" type="text" class="validate" value="{{agencia}}" required>
+										<label for="agencia">Agencia</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="conta" name="conta" type="text" class="validate" value="{{conta}}" required>
+										<label for="conta">Conta</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div>
+									<p>Tipo de conta:</p>
+									<p>
+							      <input name="tipoconta" type="radio" id="corrente" value="corrente" checked/>
+							      <label for="corrente">Corrente</label>
+									</p>
+									<p>
+							      <input name="tipoconta" type="radio" id="poupanca" value="poupanca"/>
+							      <label for="poupanca">Poupança</label>
+									</p>
+							    </div>
+								</div>
+
+								<div class="row">
+									<div>
+									<p>Conta conjunta?</p>
+									<p>
+							      <input name="conjunta" type="radio" id="sim" value="sim" onclick="showcorrentista()"/>
+							      <label for="sim">Sim</label>
+									</p>
+									<p>
+							      <input name="conjunta" type="radio" id="nao" value="nao" checked onclick="hidecorrentista()"/>
+							      <label for="nao">Não</label>
+									</p>
+							    </div>
+								</div>
+
+								<div id="segundocorrentista" class="row hide">
+									<div class="input-field col s12 m12 l12">
+										<input id="correntista2" name="correntista2" type="text" class="validate">
+										<label for="correntista2">Nome do outro correntista</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<center>
+							<button class="btn waves-effect waves-light generic_btn" type="submit" name="send">
+								Enviar
+							</button>
+						</center>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<script src="/static/js/concursos/concursos.js"></script>
+
+	</div>
+</body>
+</html>

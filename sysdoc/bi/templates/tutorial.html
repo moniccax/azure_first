@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/tutorial.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<div class="container">
+
+			<div class="row title_margin">
+				<center>
+					<font class="ms_bold title_color" size="6">Tutorial de Criação de Modelos</font>
+				</center>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="5">Passo 1:</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">É necessário possuir um documento com extensão ".docx" como o apresentado a seguir:</p>
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<iframe src="/static/tutorial/iframes/passo_1.pdf" height="700" width="100%" marginheight="0" marginwidth="0" frameborder="0" class="iframe_mobile"></iframe>
+									</div>
+								</div>
+
+								<div class="img_iframe">
+									<center>
+										<img src="/static/tutorial/iframes/passo_1.png" width="100%" height="auto">
+									</center>
+									<center>
+										<a href="/static/tutorial/iframes/passo_1.pdf" class="btn waves-effect waves-light generic_btn">
+											Download
+										</a>
+									</center>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="5">Passo 2:</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">Substituir os campos que o sistema deve preencher automaticamente por palavras que os nomeiem. Essas palavras devem ser inseridas em duplas chaves, conforme o exemplo.</p>
+											<br>
+											<p align="justify">Note que, para garantir a validação do documento, é necessário adicionar a seguinte frase:</p>
+											<br>
+											<center>
+												<p>
+													Disponível em https://admin.fundacaocefetminas.org.br/ através do código: &lcub;&lcub;COD&rcub;&rcub;.
+
+												</p>
+											</center>
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<iframe src="/static/tutorial/iframes/passo_2.pdf" height="700" width="100%" marginheight="0" marginwidth="0" frameborder="0" class="iframe_mobile"></iframe>
+									</div>
+								</div>
+
+								<div class="img_iframe">
+									<center>
+										<img src="/static/tutorial/iframes/passo_2.png" width="100%" height="auto">
+									</center>
+									<center>
+										<a href="/static/tutorial/iframes/passo_2.pdf" class="btn waves-effect waves-light generic_btn">
+											Download
+										</a>
+									</center>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="5">Passo 3:</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">Inserir imagens nos campos destinados às assinaturas. Para documentos com mais de um assinante, é importante escolher imagens com cores diferentes para cada um destes.</p>
+										</font>
+										<font class="ms_bold" color="red" size="4">
+											<br>
+											<p align="justify">Como inserir uma imagem no documento?</p>
+											<br>
+										</font>
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">1. Fazer download das imagens disponíveis <a href="/static/tutorial/assinaturas.zip" class="a_style">aqui</a>;</p>
+											<br>
+										</font>
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">2. Inserir uma imagem:</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/inserir_imagem/inserir_img.png" class="img_tutorial">
+											</center>
+											<br>
+										</font>
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">3. Posicionar a imagem em frente ao texto:</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/inserir_imagem/posicionar_img.png" class="img_tutorial">
+											</center>
+											<br>
+											<br>
+											<center>
+												<img src="/static/tutorial/inserir_imagem/posicionar_img_2.png" class="img_tutorial">
+											</center>
+											<br>
+										</font>
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">4. Resultado:</p>
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<iframe src="/static/tutorial/iframes/passo_3.pdf" height="700" width="100%" marginheight="0" marginwidth="0" frameborder="0" class="iframe_mobile"></iframe>
+									</div>
+								</div>
+
+								<div class="img_iframe">
+									<center>
+										<img src="/static/tutorial/iframes/passo_3.png" width="100%" height="auto">
+									</center>
+									<center>
+										<a href="/static/tutorial/iframes/passo_3.pdf" class="btn waves-effect waves-light generic_btn">
+											Download
+										</a>
+									</center>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="5">Passo 4:</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">Criar uma planilha com os dados dos participantes do evento. O arquivo deve respeitar aos seguintes critérios:</p>
+											<br>
+											<p align="justify">1. Os nomes das colunas da tabela devem corresponder aos nomes dos campos do documento.</p>
+											<br>
+											<p align="justify">2. As primeiras colunas devem ser, respectivamente: CPF, NOME e EMAIL. Essa medida é fundamental para o cadastro dos participantes no sistema, para que, dessa forma, eles possam acessar os documentos gerados.</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/planilha.png" width="100%" height="auto">
+											</center>
+											<br>
+											<p align="justify">3. Salve a planilha no formato padrão do Microsoft Excel &quot;xlsx&quot;.</p>
+											<br>
+										</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="5">Passo 5:</font>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										<font class="ms_bold" color="#000" size="3">
+											<p align="justify">Adicionar anexos ao documento.</p>
+											<br>
+											<p align="justify">1. No menu “Anexos”, selecione a opção “Adicionar Anexo”.</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/anexos/anexo.png" width="100%" height="auto">
+											</center>
+											<br>
+											<p align="justify">2. Defina o nome do anexo.</p>
+											<br>
+											<p align="justify">3. Selecione o arquivo .pdf em "Novo Anexo".</p>
+											<br>
+											<p align="justify">4. Clique em "Adicionar".</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/anexos/modal_anexo.png" width="100%" height="auto">
+											</center>
+											<br>
+											<p align="justify">Obs.: Um anexo pode ser, por exemplo, a ementa de um módulo dos cursos de idiomas.</p>
+											<br>
+											<p align="justify">6. Adicione uma coluna denominada "ANEXO" à planilha criada anteriormente. Em seguida, preencha as linhas da tabela com os nomes que você atribuiu aos anexos no item 2.</p>
+											<br>
+											<center>
+												<img src="/static/tutorial/anexos/planilha_anexo.png" width="100%" height="auto">
+											</center>
+										</font>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row title_margin">
+				<center>
+					<font class="ms_bold title_color" size="6">Tutorial de Criação de Eventos</font>
+				</center>
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+								<center>
+									<img src="/static/tutorial/eventos.png" width="100%" height="auto">
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/js/docs/iframe.js"></script>
+
+	</div>
+</body>
+</html>

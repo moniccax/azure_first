@@ -1,0 +1,706 @@
+{% if user %}
+
+{% set system = request.blueprint %}
+
+<!-- Dropdown - Mobile
+
+spellcheck = alumni
+group = estagios
+show_chart = bi
+
+estagios.index
+bi.index
+
+-->
+
+<ul id="sistemas_mobile" class="dropdown-content">
+	<li><a href="{{url_for('connect.index')}}">Conecta</a></li>
+	<li><a href="{{url_for('docs.events')}}">Documentos</a></li>
+	<li><a href="{{url_for('alumni.index')}}">Alumni</a></li>
+	<li><a href="{{url_for('estagios.index')}}">Estágios</a></li>
+	<li><a href="{{url_for('bi.index')}}">Bi</a></li>
+
+
+</ul>
+
+<ul id="colaboradores_mobile" class="dropdown-content">
+	<li><a href="{{url_for('admin.employee')}}">Cadatrar Novo Colaborador</a></li>
+	<li><a href="{{url_for('admin.employee_list')}}">Listar Todos Colaboradores</a></li>
+	<li><a href="{{url_for('admin.employee_list')}}">Listar Todos Usuários</a></li>
+</ul>
+
+<ul id="perfil_mobile" class="dropdown-content">
+
+	<li><a href="{{url_for('admin.profile')}}#profile_update_profilepic">Atualizar Foto</a></li>
+
+	{% if user.is_authenticated and user.category > 2500 %}
+
+	<li><a href="{{url_for('admin.profile')}}#profile_data">Dados Pessoais</a></li>
+
+	{% else %}
+
+	<li><a href="{{url_for('admin.profile')}}#profile_update_profile">Editar Perfil</a></li>
+	<li><a href="{{url_for('admin.profile')}}#profile_update_sign">Editar Assinatura</a></li>
+
+	{% endif %}
+
+	<li><a href="{{url_for('admin.profile')}}#profile_update_password">Alterar Senha</a></li>
+</ul>
+
+<ul id="configuracoes_mobile" class="dropdown-content">
+
+	{% if user.is_authenticated and user.category < 2000 %}
+
+	<li><a href="{{url_for('admin.backup')}}">Fazer Backup do Banco de Dados</a></li>
+	<li><a href="{{url_for('admin.restore')}}">Fazer Restore do  Banco de Dados</a></li>
+
+	{% if maintenance == 'false' %}
+
+	<li><a href="{{url_for('admin.setMaintenance')}}">Iniciar Manutenção do Sistema</a></li>
+
+	{% else %}
+
+	<li><a href="{{url_for('admin.setMaintenance')}}">Finalizar Manutenção do Sistema</a></li>
+
+	{% endif %}
+
+	{% endif %}
+
+</ul>
+
+<!-- Navbar -->
+
+<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+
+			{% if maintenance == 'false' %}
+
+			{% if system == "docs" %}
+
+			<a href="#" id="sistema" class="brand-logo tooltipped div_maior_993" data-position="bottom" data-delay="50" data-tooltip="Trocar Sistema">
+				<img src="/static/images/systems/fcmdocumentos.png" class="logo_system">
+			</a>
+
+			<a href="{{url_for('docs.events')}}" class="brand-logo div_993">
+				<img src="/static/images/systems/fcmdocumentos.png" class="logo_system">
+			</a>
+
+			{% elif system == "connect" %}
+
+			<a href="#" id="sistema" class="brand-logo tooltipped div_maior_993" data-position="bottom" data-delay="50" data-tooltip="Trocar Sistema">
+				<img src="/static/images/systems/fcmconecta.png" class="logo_system">
+			</a>
+
+			<a href="{{url_for('connect.index')}}" class="brand-logo div_993">
+				<img src="/static/images/systems/fcmconecta.png" class="logo_system">
+			</a>
+
+			{% else %}
+
+			<a href="#" id="sistema" class="brand-logo tooltipped div_maior_993" data-position="bottom" data-delay="50" data-tooltip="Trocar Sistema">
+				<img src="/static/images/logo_fcm.png" width="110px" height="100%" class="logo_fcm">
+			</a>
+
+			<a href="{{url_for('admin.index')}}" class="brand-logo div_993">
+				<img src="/static/images/logo_fcm.png" width="110px" height="100%" class="logo_fcm">
+			</a>
+
+			{% endif %}
+
+			{% else %}
+
+			<a href="{{url_for('admin.setMaintenance')}}" class="brand-logo logo_margin">
+				<img src="/static/images/maintenance.png" class="logo_maintenance">
+			</a>
+
+			{% endif %}
+
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons menu_mobile">menu</i>
+			</a>
+
+			<ul class="hide-on-med-and-down left_menu">
+
+				{% if user.is_authenticated and user.category < 2000 %}
+
+				<li><a href="{{url_for('docs.dashboard')}}">Dashboard</a></li>
+				<li><a href="#"><b>|</b></a></li>
+				<li><a href="#" class="ms_medium" id="colaboradores">Usuários</a></li>
+
+				{% endif %}
+
+				{% if system == "docs" %}
+
+				{% if user.is_authenticated and user.category < 2000 %}
+
+				<li><a href="#"><b>|</b></a></li>
+
+				{% endif %}
+
+				<li><a href="{{url_for('docs.events')}}" class="ms_medium">Eventos</a></li>
+
+				{% if event_id is defined  %}
+
+				<li><a href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+				<li><a href="{{url_for('docs.templates', id=event_id)}}#event_templates">Modelos</a></li>
+
+				{% endif %}
+
+				{% if template_id is defined  %}
+
+				<li><a href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+				<li><a href="{{url_for('docs.document', id=template_id)}}#template_details">Documentos</a></li>
+
+				{% endif %}
+
+				{% if event_idd is defined  %}
+
+				<li><a href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+				<li><a href="{{url_for('docs.document', id=template_id)}}#template_details">Documentos</a></li>
+
+				{% endif %}
+
+				{% endif %}
+			</ul>
+
+			<ul class="right hide-on-med-and-down">
+
+				{% if user.is_authenticated %}
+
+				<li>
+					<a href="#" class="ms_medium tooltipped" id="perfil" data-position="bottom" data-delay="50" data-tooltip="Perfil">
+						{{user.name.split(' ')[0]}}
+						<i class="material-icons right">person</i>
+					</a>
+				</li>
+
+				{%endif%}
+
+				{% if user.is_authenticated and user.category < 3000 %}
+
+				{% if system == "docs" %}
+
+				<li>
+					<a href="{{url_for('docs.signatureshistory')}}" class="ms_medium tooltipped" data-position="bottom" data-delay="50" data-tooltip="Histórico de Assinaturas">
+						<i class="material-icons">edit</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				{% if (notifications is defined) and notifications %}
+
+				<li>
+					<a class="modal-trigger tooltipped" href="#modalnotifications" data-position="bottom" data-delay="50" data-tooltip="Notificações">
+						<i class="material-icons">notifications_active</i>
+					</a>
+				</li>
+
+				{% else %}
+
+				<li>
+					<a class="modal-trigger tooltipped" href="#modalnotifications" data-position="bottom" data-delay="50" data-tooltip="Notificações">
+						<i class="material-icons">notifications_none</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				{% if system == "docs" %}
+
+				<li>
+					<a href="{{url_for('docs.tutorial')}}" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ajuda">
+						<i class="material-icons">help_outline</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				{% endif %}
+
+				{% if user.is_authenticated %}
+
+				{% if user.category < 2000 %}
+
+				<li>
+					<a href="#" id="configuracoes" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Configurações">
+						<i class="material-icons">settings</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				<li>
+					<a href="{{url_for('admin.logout')}}" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sair">
+						<i class="material-icons">power_settings_new</i>
+					</a>
+				</li>
+
+				{%else%}
+
+				<li>
+					<a class="waves-effect waves-light btn login_btn" href="{{url_for('admin.login')}}">
+						<i class="material-icons right">exit_to_app</i>Login
+					</a>
+				</li>
+
+				{%endif%}
+
+			</ul>
+
+			<!-- Menu versão mobile -->
+
+			<ul class="side-nav" id="mobile-demo">
+
+				<li><a href="#" class="ms_medium dropdown-button" data-activates="sistemas_mobile">Sistemas</a></li>
+
+				{% if user.is_authenticated and user.category < 2000 %}
+
+				<li><a href="{{url_for('docs.dashboard')}}">Dashboard</a></li>
+				<li><a href="#" class="ms_medium dropdown-button" data-activates="colaboradores_mobile">Usuários</a></li>
+
+				{% endif %}
+
+				{% if system == "docs" %}
+
+				<li><a href="{{url_for('docs.events')}}" class="ms_medium">Eventos</a></li>
+
+				{% if event_id is defined  %}
+
+				<li><a href="{{url_for('docs.templates', id=event_id)}}#event_templates">Modelos</a></li>
+
+				{% endif %}
+
+				{% if template_id is defined  %}
+
+				<li><a href="#">Documentos</a></li>
+
+				{% endif %}
+
+				{% if event_idd is defined  %}
+
+				<li><a href="#">Documentos</a></li>
+
+				{% endif %}
+
+				{% endif %}
+
+				{% if user.is_authenticated%}
+
+				<li>
+					<a href="#" class="ms_medium dropdown-button" data-activates="perfil_mobile">Perfil
+						<i class="material-icons left icon_mobile">person</i>
+					</a>
+				</li>
+
+				{%endif%}
+
+				{% if user.is_authenticated and user.category < 3000 %}
+
+				{% if system == "docs" %}
+
+				<li>
+					<a href="{{url_for('docs.signatureshistory')}}" class="ms_medium">Histórico de Assinaturas
+						<i class="material-icons left icon_mobile">edit</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				{% if (notifications is defined) and notifications %}
+
+				<li>
+					<a href="#modalnotifications" class="ms_medium modal-trigger">Notificações
+						<i class="material-icons left icon_mobile">notifications_active</i>
+					</a>
+				</li>
+
+				{% else %}
+
+				<li>
+					<a href="#modalnotifications" class="ms_medium modal-trigger">Notificações
+						<i class="material-icons left icon_mobile">notifications_none</i>
+					</a>
+				</li>
+
+				{%endif%}
+
+				{% if system == "docs" %}
+
+				<li>
+					<a href="{{url_for('docs.tutorial')}}" class="ms_medium">Ajuda
+						<i class="material-icons left icon_mobile">help</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				{%endif%}
+
+				{% if user.is_authenticated %}
+
+				{% if user.category < 2000 %}
+
+				<li>
+					<a href="#" class="ms_medium dropdown-button" data-activates="configuracoes_mobile">Configurações
+						<i class="material-icons left icon_mobile">settings</i>
+					</a>
+				</li>
+
+				{% endif %}
+
+				<li>
+					<a href="{{url_for('admin.logout')}}" class="ms_medium">Sair
+						<i class="material-icons left icon_mobile">power_settings_new</i>
+					</a>
+				</li>
+
+				{% else %}
+
+				<li>
+					<a href="{{url_for('admin.login')}}" class="ms_medium">Login</a>
+				</li>
+
+				{% endif %}
+
+			</ul>
+		</div>
+	</nav>
+</div>
+
+{% include 'notifications.html' %}
+
+<!-- Submenu de Ícones -  Perfil de Usuário -->
+
+<div class="div_maior_993">
+
+	<div class="submenu hide" id="submenu_id">
+
+		<div class="submenu_overlay"></div>
+
+		<div class="card horizontal card_color">
+			<div class="card-stacked">
+				<div class="card-content" style="padding: 0;">
+
+					<div class="row card_content_row">
+
+						<div class="hide" id="submenu_system">
+
+							<div class="col s2"></div>
+							<a href="{{url_for('estagios.index')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">group</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Estágios</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+							<a href="{{url_for('connect.index')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">share</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Conecta</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('docs.events')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">description</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Documentos</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+							<a href="{{url_for('alumni.index')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">spellcheck</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Alumni</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="hide" id="submenu_profile">
+
+							<div class="col s2"></div>
+
+							{% if user.is_authenticated and user.category == 3000 %}
+
+							<div class="col s1"></div>
+
+							<a href="{{url_for('admin.profile')}}#profile_update_profilepic">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">camera_alt</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Atualizar Foto</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('admin.profile')}}#profile_data">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">perm_identity</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Dados Pessoais</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							{% endif %}
+
+							{% if user.is_authenticated and user.category < 3000 %}
+
+							<a href="{{url_for('admin.profile')}}#profile_update_profilepic">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">camera_alt</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Atualizar Foto</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('admin.profile')}}#profile_update_profile">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">perm_identity</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Editar Perfil</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('admin.profile')}}#profile_update_sign">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin_sign">
+												<font color="#ed3237">
+													<i class="material-icons icon_size_sign">border_color</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Editar Assinatura</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							{% endif %}
+
+							<a href="{{url_for('admin.profile')}}#profile_update_password">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">lock_open</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Alterar Senha</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="hide" id="submenu_employee">
+
+							<div class="col s3"></div>
+
+							<a href="{{url_for('admin.employee')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">add</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Cadastrar Novo Colaborador</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('admin.employee_list')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">description</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Listar Todos Colaboradores</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+							<a href="{{url_for('admin.users_list')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">description</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Listar Todos <br> Usuários</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="hide" id="submenu_settings">
+
+							<div class="col s3"></div>
+
+							{% if user.is_authenticated and user.category < 2000 %}
+
+							<a href="{{url_for('admin.backup')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">backup</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Fazer Backup do Banco de Dados</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							<a href="{{url_for('admin.restore')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin">
+												<font color="#ed3237">
+													<i class="material-icons icon_size">restore</i>
+												</font>
+											</p>
+											<p>
+												<font class="ms_medium" size="3" color="#ed3237">Fazer Restore do Banco de Dados</font>
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+							<a href="{{url_for('admin.setMaintenance')}}">
+								<div class="col s2">
+									<div class="menu_icons">
+										<center>
+											<p class="card_p_margin_sign">
+												<font color="#ed3237">
+													<i class="material-icons icon_size_sign">build</i>
+												</font>
+											</p>
+											<p>
+												{% if maintenance == 'false' %}
+												<font class="ms_medium" size="3" color="#ed3237">Iniciar Manutenção do Sistema</font>
+												{% else %}
+												<font class="ms_medium" size="3" color="#ed3237">Finalizar Manutenção do Sistema</font>
+												{% endif %}
+											</p>
+										</center>
+									</div>
+								</div>
+							</a>
+
+							{% endif %}
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+{% else %}
+
+{% include 'headerBefore.html' %}
+
+{% endif %}

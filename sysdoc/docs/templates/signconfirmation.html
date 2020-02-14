@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/signconfirmation.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<!-- Confirmação de Assinaturas -->
+
+		<div class="content">
+
+			<div class="container">
+
+				<div class="row title_margin">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="6">Confirmação de Assinatura</font>
+						</center>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">Download:</font>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_bold" color="#000">
+							<a download="{{template.file_name}}" href="/{{template.path}}" class="waves-effect waves-light btn generic_btn">
+								<i class="material-icons left">save_alt</i>Modelo Cadastrado
+							</a>
+						</font>
+					</div>
+				</div>
+
+				<div class="row title_margin">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">
+							<p>Informações do Evento:</p>
+						</font>
+						{% if template.event.title %}
+
+						<font class="doc_details" size="3">
+							Título: {{template.event.title}}
+						</font>
+
+						{% endif %}
+
+						{% if template.event.coordinator %}
+
+						<font class="doc_details" size="3">
+							Coordenador: {{template.event.coordinator}}
+						</font>
+
+						{% endif %}
+
+						{% if template.event.abstract %}
+
+						<font class="doc_details" size="3">
+							Resumo: {{template.event.abstract}}
+						</font>
+
+						{% endif %}
+
+						{% if template.event.startDate %}
+
+						<div class="doc_details">
+							<font class="ms_bold" size="3">Data de Início: </font>
+							<font class="ms_bold" size="3" id="startDate"></font>
+						</div>
+
+						<input id="startDateInput" name="startDateInput" type="text" class="ms_bold hide" value="{{template.event.startDate}}">
+
+						{% endif %}
+
+						{% if template.event.endDate %}
+
+						<div class="doc_details">
+							<font class="ms_bold" size="3">Data de Encerramento: </font>
+							<font class="ms_bold" size="3" id="endDate"></font>
+						</div>
+
+						<input id="endDateInput" name="endDateInput" type="text" class="ms_bold hide" value="{{template.event.endDate}}">
+
+
+						{% endif %}
+
+						{% if template.event.workload %}
+
+						<font class="doc_details" size="3">
+							Carga Horária: {{template.event.workload}} horas
+						</font>
+
+						{% endif %}
+
+						{% if template.event.place %}
+
+						<font class="doc_details" size="3">
+							Local: {{template.event.place}}
+						</font>
+
+						{% endif %}
+
+						{% if template.event.participantsNumber %}
+
+						<font class="doc_details" size="3">
+							Número de Participantes: {{template.event.participantsNumber}}
+						</font>
+
+						{% endif %}
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">
+							<p>Administradores:</p>
+						</font>
+						<font class="ms_bold" size="3">
+							<ul class="adm_padding">
+								{%for administrator in template.event.administrators%}
+								<li class="adm_list">{{administrator.user.name}}</li>
+								{%endfor%}
+							</ul>
+						</font>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">
+							<p>{{template.documents.count()}} Participante{%if template.documents.count()!=1%}s{%endif%}:</p>
+						</font>
+					</div>
+				</div>
+
+				<div class="card card_padding">
+
+					{% if template.documents.count() %}
+
+					<table class="bordered striped responsive-table" id="dataTable" cellspacing="0">
+						<thead>
+							<tr>
+								<th>
+									<font class="ms_bold">#</font>
+								</th>
+								{% for field in template.fields %}
+								{%if field.name in ['CPF','NOME']%}
+								<th>
+									<font class="ms_bold">{{field.name}}</font>
+								</th>
+								{%endif%}
+								{% endfor %}
+								<th>
+									<font class="ms_bold">DATA DE <br>SOLICITAÇÃO</font>
+								</th>
+								<th>
+									<font class="ms_bold">DATA DE <br>ASSINATURA</font>
+								</th>
+								<th>
+									<font class="ms_bold">ASSINATURA</font>
+								</th>
+								<th>
+									<font class="ms_bold">DOWNLOAD</font>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for line in table %}
+							<tr>
+								<td class="tbody_td_border">
+									{{loop.index}}
+								</td>
+								{% for value in line %}
+								{% if value.field.name in ['CPF','NOME'] %}
+								<td class="tbody_td_border">
+									{{value.value}}
+								</td>
+								{% endif %}
+								{% endfor %}
+								{% for temp_signature in template.signatures %}
+								{%if temp_signature.signature.user.cpf == user.cpf%}
+								<td class="tbody_td_border date_height">
+									{%if temp_signature.request_date is not none%}
+									{{gmt_timezone.localize(temp_signature.request_date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+									{%endif%}
+								</td>
+								<td class="tbody_td_border date_height">
+									{%if temp_signature.authorization_date is not none%}
+									{{gmt_timezone.localize(temp_signature.authorization_date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+									{%endif%}
+								</td>
+								{%endif%}
+								{%endfor%}
+								{% if line[0].document in documents %}
+								<td class="tbody_td_border">
+									Aguardando confirmação
+								</td>
+								{% else %}
+								<td class="tbody_td_border">
+									<i class="material-icons">done</i>
+								</td>
+								{%endif%}
+								<td class="tbody_last_td_border">
+									<a href="{{url_for('docs.certificate_test', code=line[0].document.code)}}">
+										<i class="material-icons table_icon_color">save_alt</i>
+									</a>
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+
+					{% else %}
+
+					<div class="row text_margin">
+						<div class="col s12">
+							<center><font class="ms_bold" size="3">Não há participantes cadastrados nesse evento.</font></center>
+						</div>
+					</div>
+
+					{% endif %}
+
+				</div>
+
+				<div class="row sign_title_margin">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">Assinaturas:</font>
+					</div>
+				</div>
+
+				<div class="row sign_margin">
+
+					{% for temp_signature in template.signatures %}
+
+					<div class="col s12 m12 l4">
+						<div class="sign_card">
+							{% if temp_signature.authorized %}
+
+							<i class="material-icons tooltipped sign_authorization_ok" data-position="bottom" data-delay="50" data-tooltip="Autorizada!">check_circle</i>
+
+							{%else%}
+
+							<i class="material-icons tooltipped sign_authorization" data-position="bottom" data-delay="50" data-tooltip="Aguardando autorização!">warning</i>
+
+							{% endif %}
+
+							<center>
+								<font class="sign_user_name" size="3">
+									{{temp_signature.signature.user.name.split(' ')[0]}} {{temp_signature.signature.user.name.split(' ')[-1]}}
+								</font>
+							</center>
+
+							<center>
+								<img src="/{{temp_signature.signature.path}}" class="sign_img_margin"  width="100%" height="auto">
+							</center>
+						</div>
+					</div>
+
+					{% endfor %}
+
+				</div>
+
+				{% if not tosignTemplate.authorized%}
+
+				<div class="row confirm_btn">
+					<div class="col s12">
+						<center>
+							<form action="{{url_for('docs.signconfirmation_form',id=template.id)}}" method="post">
+								<button class="btn waves-effect waves-light red" type="submit">Confirmar assinatura</button>
+							</form>
+						</center>
+					</div>
+				</div>
+
+				{%endif%}
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+		<script src="/static/js/sb-admin-datatables.min.js"></script>
+		<script src="/static/js/table.js"></script>
+
+	</div>
+</body>
+</html>

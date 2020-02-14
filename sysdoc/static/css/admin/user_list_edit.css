@@ -1,0 +1,60 @@
+/* Select do modal - categorias do usuário */
+
+.select_ctg {}
+
+/* Modal */
+
+.modal_sign_margin {
+	margin-bottom: 0;
+}
+
+.modal_btn_margin {
+	margin-bottom: 10%;
+}
+
+.modal_sign_title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.modal_category_title {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/* Lista de Colaboradores */
+
+.emp_button {
+  background-color: transparent;
+  color: #000;
+  font-family: 'ms-semi-bold';
+  margin-left: -7%;
+  box-shadow: none;
+}
+
+.emp_button:hover {
+  background-color: #efefef;
+  box-shadow: none;
+}
+
+.emp_button:active {
+  background-color: #efefef;
+  box-shadow: none;
+}
+
+/* Categorias */
+
+.category_icon {
+  color: gray !important;
+}
+
+.remove_cat_icon {
+  color: gray !important;
+  vertical-align:middle;
+  font-size: 22px !important;
+  padding-left: 4px !important;
+}
+
+.add_adm_icon {
+  vertical-align:middle;
+}

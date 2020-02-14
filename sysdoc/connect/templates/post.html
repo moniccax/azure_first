@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Connect -->
+	<link href="/static/css/connect/add_post.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/connect/post.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/connect/comment.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Header -->
+
+		{% include 'header.html' %}
+
+		<!--  Menu Inferior -->
+
+		{% if user.is_authenticated %}
+
+		{% include 'bottom_menu.html' %}
+
+		{% endif %}
+
+		<div class="content">
+			<div class="container">
+
+				<div class="row margin_top">
+
+					<div class="col l1">
+						<div class="div_maior_993">
+							<div class="fixed-action-btn btn_fixed">
+								<a class="btn-floating btn-large waves-effect waves-light btn_back" href="{{url_for('connect.index')}}">
+									<i class="material-icons">arrow_back</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col s12 m12 l10">
+
+						{% if post is none %}
+
+						<div class="post_none">
+							<center>
+								<font class="ms_bold" size="6" color="#213f63">Post não encontrado!</font>
+							</center>
+						</div>
+
+						{% else %}
+
+						<div class="card">
+
+							<!-- Detalhes do post -->
+
+							<div class="row post_author">
+								<div class="col s12">
+
+									<!-- Nome do autor e data de publicação -->
+
+									<!-- Desktop -->
+
+									<div class="div_maior_993">
+										<div class="row">
+											<a href="{{url_for('connect.filterUser', id=post.author.id)}}">
+												<div class="col l1">
+													<img src="{{getprofilepic(post.author.id)}}" class="user_perfil">
+												</div>
+												<div class="col l5">
+													<font class="ms_bold" color="#787c7e" size="2">
+														<p class="p_margin">
+															{{post.author.name}}
+														</p>
+														<p class="p_margin">
+															{{gmt_timezone.localize(post.date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+														</p>
+													</font>
+												</div>
+											</a>
+											<div class="col l6">
+
+												<!-- Categoria -->
+												{% if post.contexts|length <= 3 %}
+
+												{% for context in post.contexts %}
+
+												<a href="{{url_for('connect.filtercontext', con=context.context.name)}}">
+													<span class="new badge post_category" style="background: {{context.context.color}}" data-badge-caption="{{context.context.name}}"></span>
+												</a>
+
+												{% endfor %}
+
+												{% else %}
+
+												<a href="#modal_more_ctx_{{post.id}}" class="modal-trigger">
+													<span class="new badge post_category" style="background: #aaa" data-badge-caption="Mais +"></span>
+												</a>
+
+												<a href="{{url_for('connect.filtercontext', con=post.contexts[0].context.name)}}">
+													<span class="new badge post_category" style="background: {{post.contexts[0].context.color}}" data-badge-caption="{{post.contexts[0].context.name}}"></span>
+												</a>
+
+												<a href="{{url_for('connect.filtercontext', con=post.contexts[1].context.name)}}">
+													<span class="new badge post_category" style="background: {{post.contexts[1].context.color}}" data-badge-caption="{{post.contexts[1].context.name}}"></span>
+												</a>
+
+												{% endif %}
+
+												<!-- Visibilidade -->
+
+												{% if user.is_authenticated and user.category <= 2000: %}
+
+												{% if post.visibility == 3: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Público">visibility</i>
+
+												{%endif%}
+
+												{% if post.visibility == 2: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Privado a Fundação CEFETMINAS">visibility_off</i>
+
+												{% endif %}
+
+												{% if post.visibility == 1: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Privado a {%for context in post.contexts:%}{{context.context.name}}/{%endfor%}">visibility_off</i>
+
+												{% endif %}
+
+												{% endif %}
+
+												{% if user.is_authenticated and user.category <= 1000: %}
+
+												{% if not post.contexts.authorized %}
+
+												<i class="post_lock material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Bloqueado">lock</i>
+
+												{% endif %}
+
+												{% endif %}
+											</div>
+										</div>
+									</div>
+
+									<!-- Mobile -->
+
+									<div class="div_993">
+										<div class="row">
+											<a href="{{url_for('connect.filterUser', id=post.author.id)}}">
+												<div class="col s2">
+													<img src="{{getprofilepic(post.author.id)}}" class="user_perfil">
+												</div>
+												<div class="col s5">
+													<font class="ms_bold" color="#787c7e" size="2">
+														<p class="p_margin">
+															{{post.author.name.split(' ')[0]}} {{post.author.name.split(' ')[-1]}}
+														</p>
+														<p class="p_margin">
+															{{gmt_timezone.localize(post.date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+														</p>
+													</font>
+												</div>
+											</a>
+											<div class="col s5">
+
+												<!-- Contextos -->
+
+												{% if post.contexts|length <= 3 %}
+
+												{% for context in post.contexts %}
+
+												<a href="{{url_for('connect.filtercontext', con=context.context.name)}}">
+													<span class="new badge post_category" style="background: {{context.context.color}}" data-badge-caption="{{context.context.name[0]}}">
+														{% if not context.authorized %}
+														<i class="material-icons {% if iscontextadmin(user,context.context) %}post_lock_admin{% else %}post_lock{% endif %}">lock</i>
+														{% endif %}
+													</span>
+												</a>
+
+												{% endfor %}
+
+												{% else %}
+
+												<a href="#modal_more_ctx_{{post.id}}" class="modal-trigger">
+													<span class="new badge post_category" style="background: #aaa" data-badge-caption="+"></span>
+												</a>
+
+												<a href="{{url_for('connect.filtercontext', con=post.contexts[0].context.name)}}">
+													<span class="new badge post_category" style="background: {{post.contexts[0].context.color}}" data-badge-caption="{{post.contexts[0].context.name[0]}}">
+														{% if not post.contexts[0].authorized %}
+														<i class="material-icons {% if iscontextadmin(user,post.contexts[0].context) %}post_lock_admin{% else %}post_lock{% endif %}">lock</i>
+														{% endif %}
+													</span>
+												</a>
+
+												<a href="{{url_for('connect.filtercontext', con=post.contexts[1].context.name)}}">
+													<span class="new badge post_category" style="background: {{post.contexts[1].context.color}}" data-badge-caption="{{post.contexts[1].context.name[0]}}">
+														{% if not post.contexts[1].authorized %}
+														<i class="material-icons {% if iscontextadmin(user,post.contexts[0].context) %}post_lock_admin{% else %}post_lock{% endif %}">lock</i>
+														{% endif %}
+													</span>
+												</a>
+
+												{% endif %}
+
+												<!-- Visibilidade -->
+
+												{% if user.is_authenticated and user.category <= 2000: %}
+
+												{% if post.visibility == 3: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Público">visibility</i>
+
+												{%endif%}
+
+												{% if post.visibility == 2: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Privado a Fundação CEFETMINAS">visibility_off</i>
+
+												{% endif %}
+
+												{% if post.visibility == 1: %}
+
+												<i class="post_config material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Privado a {%for context in post.contexts:%}{{context.context.name}}/{%endfor%}">visibility_off</i>
+
+												{% endif %}
+
+												{% endif %}
+
+												<!-- Autorização -->
+
+												{% if user.is_authenticated and user.category <= 1000: %}
+
+												{% if not post.authorized %}
+
+												<i class="post_lock material-icons tooltipped" data-position="top" data-delay="50" data-tooltip="Bloqueado">lock</i>
+
+												{% endif %}
+
+												{% endif %}
+											</div>
+										</div>
+									</div>
+
+									<!-- Título do post -->
+
+									<div class="post_title">
+										<font class="ms_bold" color="#000" size="4">
+											{{post.title}}
+										</font>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- Imagens do post -->
+
+							{% if post.images is defined %}
+
+							<div class="card-image">
+
+								{% if post.images.count() == 1 %}
+
+								{% for image in post.images %}
+
+								<img class="activator" src="/{{image.path}}">
+
+								{% endfor %}
+
+								{% endif %}
+
+								{% if post.images.count() > 1 %}
+
+								<div class="slider" id="slider_{{post.id}}">
+									<ul class="slides">
+
+										{% for image in post.images %}
+
+										<li>
+											<img src="/{{image.path}}">
+										</li>
+
+										{% endfor %}
+
+									</ul>
+								</div>
+
+								<div class="slider_btn">
+									<a class="waves-effect waves-light btn" id="slide_prev_{{post.id}}">
+										<i class="material-icons">
+											keyboard_arrow_left
+										</i>
+									</a>
+									<a class="waves-effect waves-light btn" id="slide_next_{{post.id}}">
+										<i class="material-icons">
+											keyboard_arrow_right
+										</i>
+									</a>
+								</div>
+
+								<div class="slide_next_btn_mobile">
+									<a class="slide_next_btn" id="slide_next_{{post.id}}">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+
+								{%endif%}
+
+							</div>
+
+							{% endif %}
+
+
+							<!-- Texto do post -->
+
+							<div class="card-content">
+
+								<div class="row post_text_margin">
+									<div class="col s12">
+										<p align="justify" class="post_text">{{post.text|safe}}</p>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Comentários -->
+
+							{% if post.comments %}
+
+							<div class="card-action">
+
+								<div class="row comment_margin">
+									<div class="col s12">
+										<font class="ms_bold" size="3" color="#000">Comentários:</font>
+									</div>
+								</div>
+
+								{% if user.is_authenticated %}
+
+								<div class="row box_comment">
+									<form class="col s12" action="{{url_for('connect.new_comment', id=post.id)}}" method="post" id="form_new_comment">
+										<div class="row textarea_comment">
+											<div class="input-field col s12 m12 l12">
+												<textarea id="new_comment" name="new_comment" class="materialize-textarea ms_medium"></textarea>
+												<label class="ms_medium" for="new_comment">Escreva um comentário</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col s12">
+												<button class="btn waves-effect waves-light send_comment" type="submit">
+													Enviar
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								{% endif %}
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+
+										{{s|safe}}
+
+									</div>
+								</div>
+
+								{% if user.is_authenticated %}
+
+								<div class="row row_edit">
+									<div class="col s12">
+										{% if post.id in editable_posts %}
+										<a href="#modal_edit_post_{{post.id}}" class="modal-trigger">
+											<i class="material-icons right edit_color">edit</i>
+										</a>
+										<a href="">
+											<i data-target="modal_delete_{{post.id}}" class="material-icons right edit_color modal-trigger">delete</i>
+										</a>
+										{% endif %}
+										{% if iscontextsadmin(user, post.contexts) %}
+										<a href="#modal_unlock_post_{{post.id}}" class="modal-trigger">
+											<i class="material-icons right edit_color">lock_open</i>
+										</a>
+										{% endif %}
+									</div>
+								</div>
+
+								{% endif %}
+
+							</div>
+
+							{% endif %}
+
+							{% endif %}
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+		{% if user.is_authenticated %}
+
+		<!-- MODAL - Adicionar Post -->
+
+		{% include "modal_add_post.html" %}
+
+		<!-- MODALS: contextos, edição do post e exclusão do post -->
+
+		{% include 'modals_edit_ctx_del.html' %}
+
+		<!-- MODAL: editar comentário -->
+
+		{% for pc in post_comments %}
+
+		<div id="modal_edit_comment_btn_{{pc.id}}" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_medium" size="4" color="#213f63">Editar</font>
+					</div>
+				</div>
+				<form action="{{url_for('connect.edit_comment', id=pc.id)}}" method="post">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="comment_{{pc.id}}" name="comment_{{pc.id}}" type="text" class="validate ms_medium" value="{{pc.text}}">
+							<label for="comment_{{pc.id}}" class="ms_medium">Comentário</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<center>
+								<button class="btn waves-effect waves-light generic_btn" type="submit">
+									Enviar
+								</button>
+							</center>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal_delete_comment_{{pc.id}}" class="modal">
+			<div class="modal-content">
+				<font class="ms_bold" size="3">Deseja realmente excluir o comentário?</font>
+			</div>
+			<div class="modal-footer">
+				<a href="{{url_for('connect.delete_comment', id=pc.id)}}" class="modal-action modal-close waves-effect waves-green btn-flat">Sim</a>
+				<a class="modal-action modal-close waves-effect waves-red btn-flat">Não</a>
+			</div>
+		</div>
+
+		{% endfor %}
+
+		{% endif %}
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<div id="comment_btn_overlay"></div>
+
+		<!-- Script -->
+
+		<script type="text/javascript" src="/static/js/connect/post.js"></script>
+
+		<script type="text/javascript">
+			{% for pc in post_comments %}
+			$('#comment_{{pc.id}}').off();
+			$('#btn_comment_{{pc.id}}').click(function(){
+				$('#new_comment_{{pc.id}}').toggleClass('hide');
+			});
+			{% endfor %}
+		</script>
+
+	</div>
+</body>
+</html>

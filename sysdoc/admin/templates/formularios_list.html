@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Formulários preenchidos</title>
+ </head>
+ <body>
+	 <h1>Formulários preenchidos</h1>
+  <table>
+	<tr><th colspan="5"><hr></th></tr>
+	{%for name in names%}
+	<tr><td><a href="static/formularios/{{name}}">{{name}}</a></td></tr>
+	{%endfor%}
+	<tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

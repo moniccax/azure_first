@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/document_full_table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<!-- Tabela completa - participantes do evento -->
+
+		<div class="content">
+			<div class="container">
+
+				{% if template.fields.count() %}
+
+				<div class="row title_margin">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="6">Tabela Completa</font>
+						</center>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<font class="ms_bold title_color" size="4">Participantes:</font>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<div class="card card_padding">
+
+							<div class="container card_container">
+
+								<div class="scrolling-wrapper">
+
+									<table class="bordered striped responsive-table" id="dataTable" cellspacing="0">
+
+										<thead>
+											<tr>
+												{% for field in template.fields %}
+												<th class="row_height row_padding">
+													<font class="ms_bold">{{field.name}}</font>
+													<font color="#aaaaaa">
+														<i class="material-icons icon_sort">swap_vert</i>
+													</font>
+												</th>
+												{% endfor %}
+												<th>
+													<div class="div_maior_993">
+														<center><font class="ms_bold">STATUS</font></center>
+													</div>
+													<div class="div_993">
+														<font class="ms_bold">STATUS</font>
+													</div>
+												</th>
+												<th>
+													<div class="div_maior_993">
+														<center><font class="ms_bold">DOWNLOAD</font></center>
+													</div>
+													<div class="div_993">
+														<font class="ms_bold">DOWNLOAD</font>
+													</div>
+												</th>
+												<th>
+													<div class="div_maior_993">
+														<center><font class="ms_bold">EXCLUIR</font></center>
+													</div>
+													<div class="div_993">
+														<font class="ms_bold">EXCLUIR</font>
+													</div>
+												</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											{% for line in table %}
+											<tr>
+
+												{% for value in line %}
+
+												<td class="input-field row_height tbody_td_border">
+
+													<form action="{{url_for('docs.full_table_edit', vid=value.id, tid=template.id)}}" method="post">
+
+														<p class="hide" id="old_value_{{value.id}}">{{value.value}}</p>
+
+														<input type="text" name="new_value_{{value.id}}" id="new_value_{{value.id}}" value="{{value.value}}">
+
+														<center><button type="submit" class="hide" id="update_value_{{value.id}}"></button></center>
+
+													</form>
+
+												</td>
+
+												{% endfor %}
+
+												<td class="row_height_icon tbody_td_border">
+
+													<div class="div_maior_993">
+														<center>
+															{% if line[0].document.available %}
+															<a href="{{url_for('docs.full_table_block_single_document', did=line[0].document.id, tid=template.id)}}">
+																<i class="material-icons tooltipped table_icon_color" data-position="left" data-delay="50" data-tooltip="Disponível">done</i>
+															</a>
+															{% else %}
+															<a href="{{url_for('docs.full_table_unlock_single_document', did=line[0].document.id, tid=template.id)}}">
+																<i class="material-icons tooltipped table_icon_color" data-position="left" data-delay="50" data-tooltip="Aguardando confirmação">block</i>
+															</a>
+															{% endif %}
+														</center>
+													</div>
+
+													<div class="div_993">
+														{% if line[0].document.available %}
+														<a href="{{url_for('docs.full_table_block_single_document', did=line[0].document.id, tid=template.id)}}">
+															<i class="material-icons table_icon_color">done</i>
+														</a>
+														{% else %}
+														<a href="{{url_for('docs.full_table_unlock_single_document', did=line[0].document.id, tid=template.id)}}">
+															<i class="material-icons table_icon_color">block</i>
+														</a>
+														{% endif %}
+													</div>
+
+												</td>
+
+												<td class="row_height_icon tbody_td_border">
+
+													<div class="div_maior_993">
+														<center>
+															<a href="{{url_for('docs.certificate_test', code=line[0].document.code)}}">
+																<i class="material-icons table_icon_color">save_alt</i>
+															</a>
+														</center>
+													</div>
+
+													<div class="div_1080">
+														<a href="{{url_for('docs.certificate_test', code=line[0].document.code)}}">
+															<i class="material-icons table_icon_color">save_alt</i>
+														</a>
+													</div>
+
+												</td>
+
+												<td class="row_height_icon tbody_last_td_border">
+
+													<div class="div_maior_993">
+														<center>
+															<a class="waves-effect waves-light modal-trigger" id="delete_document{{line[0].document.id}}" href="#modal{{line[0].document.id}}">
+																<i class="material-icons table_icon_color">delete</i>
+															</a>
+														</center>
+													</div>
+
+													<div class="div_993">
+														<a class="waves-effect waves-light modal-trigger" id="delete_document{{line[0].document.id}}" href="#modal{{line[0].document.id}}">
+															<i class="material-icons table_icon_color">delete</i>
+														</a>
+													</div>
+
+												</td>
+											</tr>
+
+											<!-- Modal - CONFIRMAR EXCLUSÃO DE PARTICIPANTES -->
+
+											<div id="modal{{line[0].document.id}}" class="modal">
+												<div class="modal-content">
+
+													<div class="div_maior_993">
+														<div class="fixed-action-btn">
+															<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+																<i class="material-icons">clear</i>
+															</a>
+														</div>
+													</div>
+
+													<font class="ms_bold" size="3">Deseja realmente excluir o participante?</font>
+
+												</div>
+
+												<div class="modal-footer">
+
+													<a href="{{url_for('docs.full_table_delete_participant', did=line[0].document.id, tid=template.id)}}" class="modal-action modal-close waves-effect waves-green btn-flat">Sim</a>
+													<a href="javascript:window.location.reload();" class="modal-action modal-close waves-effect waves-red btn-flat">Não</a>
+
+												</div>
+											</div>
+
+											{% endfor %}
+
+										</tbody>
+
+									</table>
+
+								</div>
+
+								<!-- AÇÕES -->
+
+								<div class="table_actions">
+
+									<div class="row">
+										<div class="col s12 m12 l12">
+											<a href="#add_participant" class="btn waves-effect waves-light modal-trigger action_btn">
+												Adicionar participantes<i class="material-icons left action_icon">person_add</i>
+											</a>
+										</div>
+									</div>
+
+									<div id="modal_delete_full_table" class="modal">
+										<div class="modal-content">
+
+											<div class="div_maior_993">
+												<div class="fixed-action-btn">
+													<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+														<i class="material-icons">clear</i>
+													</a>
+												</div>
+											</div>
+
+											<font class="ms_bold" size="3">Deseja realmente excluir todos os participantes?</font>
+
+										</div>
+
+										<div class="modal-footer">
+											<a href="{{url_for('docs.delete_all_participants', id=template.id)}}" class="modal-action modal-close waves-effect waves-green btn-flat">Sim</a>
+											<a href="javascript:window.location.reload();" class="modal-action modal-close waves-effect waves-red btn-flat">Não</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col s12 m12 l12">
+											<a href="#modal_delete_full_table" class="btn waves-effect waves-light modal-trigger action_btn">
+												Excluir Tabela<i class="material-icons left action_icon">delete</i>
+											</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col s12 m12 l12">
+											<a href="{{url_for('docs.download_file', id=template.id)}}" class="btn waves-effect waves-light action_btn">
+												Exportar Tabela<i class="material-icons left action_icon">get_app</i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- MODAL - ADICIONAR PARTICIPANTES -->
+
+				<div id="add_participant" class="modal modal-fixed-footer">
+					<div class="modal-content">
+
+						<div class="div_maior_993">
+							<div class="fixed-action-btn">
+								<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+									<i class="material-icons">clear</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row modal_title_margin">
+							<div class="col s12">
+								<center>
+									<font class="ms_bold" size="6">Adicionar Participantes</font>
+								</center>
+							</div>
+						</div>
+
+						<!-- Adicionar participantes - upload XLSX -->
+
+						<div class="div_maior_993">
+
+							<form action="{{url_for('docs.full_table_upload_participants', id=template.id)}}" method=post enctype=multipart/form-data>
+
+								<div class="row {% if not template.fields.count() %}hide{% endif %}">
+									<div class="col s12 m12 12">
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_1" value="sbr" />
+											<label for="sbr_table_1">Sobrescrever (atualiza os dados presentes na tabela).</label>
+										</p>
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_2" value="add" checked />
+											<label for="sbr_table_2">Adicionar (acrescenta novas linhas à tabela).</label>
+										</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s9 m9 l9 file-field input-field">
+										<div class="btn generic_btn attach_file_btn">
+											<span>
+												<i class="material-icons">attach_file</i>
+											</span>
+											<input type="file" name="file" accept=".xlsx">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" id="filename" name="filename" type="text" placeholder="Adicionar participantes" accept=".xlsx">
+										</div>
+									</div>
+									<div class="col s3 m3 l3">
+										<button class="btn waves-effect waves-light generic_btn upload_btn" type="submit" name="upload">
+											upload
+										</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+
+						<div class="div_993">
+
+							<form action="{{url_for('docs.full_table_upload_participants', id=template.id)}}" method=post enctype=multipart/form-data id="form_add_participants_mobile">
+
+								<div class="row {% if not template.fields.count() %}hide{% endif %}">
+									<div class="col s12 m12 12">
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_1" value="sbr" />
+											<label for="sbr_table_1">Sobrescrever (atualiza os dados presentes na tabela).</label>
+										</p>
+										<p class="sbr_margin">
+											<input name="sbr_table" type="radio" id="sbr_table_2" value="add" checked />
+											<label for="sbr_table_2">Adicionar (acrescenta novas linhas à tabela).</label>
+										</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12 file-field input-field">
+										<div class="btn generic_btn">
+											<span>
+												<i class="material-icons">attach_file</i>
+											</span>
+											<input type="file" name="file" accept=".xlsx">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" type="text" id="filename" name="filename" placeholder="Adicionar participantes" accept=".xlsx">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<center>
+											<button class="btn waves-effect waves-light generic_btn" type="submit" name="upload">
+												upload
+											</button>
+										</center>
+									</div>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+
+				{% else %}
+
+				<div class="row table_null">
+					<div class="col s12">
+						<center>
+							<p>
+								<font class="ms_bold title_color" size="6">Não há registos na tabela.</font>
+							</p>
+							<p>
+								<font class="ms_bold title_color" size="4">
+									<a href="{{url_for('docs.document',id=template.id)}}#template_documents">Voltar para documentos</a>
+								</font>
+							</p>
+						</center>
+					</div>
+				</div>
+
+				{% endif %}
+
+				<div class="div_maior_993">
+					<div class="fixed-action-btn btn_back_position">
+						<a class="btn-floating btn-large waves-effect waves-light btn_back" href="{{url_for('docs.document', id=template.id)}}#template_details">
+							<i class="material-icons">arrow_back</i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+		<script src="/static/js/sb-admin-datatables.min.js"></script>
+		<script src="/static/js/table.js"></script>
+		<script src="/static/js/docs/document_full_table.js"></script>
+
+		<script type="text/javascript">
+			{% for document in template.documents %}
+			{% for value in document.values %}
+			$(document).on('focusout', '#new_value_{{value.id}}', function() {
+				let new_value = $('#new_value_{{value.id}}').val();
+				let old_value = $('#old_value_{{value.id}}').val();
+				if(new_value != old_value){
+					$('#update_value_{{value.id}}').click();
+				}
+			});
+			{% endfor %}
+			{% endfor %}
+		</script>
+
+	</div>
+</body>
+</html>

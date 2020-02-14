@@ -1,0 +1,54 @@
+/* Botão: fechar modal */
+
+.btn-floating i {
+	color: #000;
+}
+
+.fixed-action-btn {
+	top: 0px;
+	right: 3%;
+	bottom: 100%;
+}
+
+.clear_btn {
+	background: transparent;
+	box-shadow: none;
+}
+
+/* Posição do título do modal */
+
+.modal_title_margin {
+	margin-bottom: 7%;
+}
+
+/* Parágrafos */
+
+.modal .modal-content p {
+	color: #8e8e8e;
+	font-size: 12px;
+	font-family: 'ms-semi-bold';
+}
+
+/* Tamanho do modal */
+
+.modal {
+  max-height: 100%;
+  font-family: 'ms-medium';
+}
+
+.modal.modal-fixed-footer {
+  padding: 0;
+  height: 80%;
+}
+
+@media only screen and (max-width: 992px){
+  .modal {
+    width: 95%;
+    max-height: 88%;
+  }
+
+  .modal.modal-fixed-footer {
+    padding: 0;
+    height: 100%;
+  }
+}

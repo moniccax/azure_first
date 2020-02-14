@@ -1,0 +1,151 @@
+<footer class="page-footer">
+
+	<div class="div_maior_993">
+		<div class="row footer_margin">
+			<div class="col s3">
+				<font class="ms_regular" size="2" color="#fff">Principais Parceiros</font>
+				<p>
+					<a href="http://www.cefetmg.br/">
+						<img src="/static/images/cefet.png" class="logo_cefet">
+					</a>
+					<a href="http://confies.org.br/institucional/">
+						<img src="/static/images/confies.png" class="logo_confies">
+					</a>
+				</p>
+			</div>
+			<div class="col s3">
+				<font class="ms_regular" size="2" color="#fff">
+					<a href="http://fundacaocefetminas.org.br/informe-de-rendimentos/" class="footer_before_a">
+						<p class="footer_before_p">Informe de Rendimentos</p>
+					</a>
+					<a href="http://fundacaocefetminas.org.br/licitacoes/" class="footer_before_a">
+						<p>Licitações</p>
+					</a>
+				</font>
+				<font class="ms_regular" size="2" color="#fff">Horário de Funcionamento</font><br>
+				<font class="ms_regular" size="2" color="#bcbcbc">Segunda à sexta de 9h às 18h</font><br>
+				<font class="ms_regular" size="2" color="#fff">Contato - </font>
+				<font class="ms_regular" size="2" color="#bcbcbc">(31) 3314-5200</font>
+			</div>
+			<div class="col s3">
+				<font class="ms_regular" size="2" color="#bcbcbc">Rua Alpes, 467 <br> Bairro Nova Suíça <br> Belo Horizonte/MG <br> CEP: 30.421-145</font>
+			</div>
+			<div class="col s3">
+				<div class="fb-page" data-href="http://www.facebook.com/fundacaocefetminas/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+					<blockquote cite="http://www.facebook.com/fundacaocefetminas/" class="fb-xfbml-parse-ignore">
+						<a href="http://www.facebook.com/fundacaocefetminas/">Fundação CEFETMINAS</a>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="div_993">
+
+		<div class="row footer_before_row">
+			<div class="col s12">
+				<center>
+					<font class="ms_regular" size="1" color="#fff">
+						<a href="http://fundacaocefetminas.org.br/informe-de-rendimentos/" class="footer_before_a">
+							<p>Informe de Rendimentos</p>
+						</a>
+						<a href="http://fundacaocefetminas.org.br/licitacoes/" class="footer_before_a">
+							<p>Licitações</p>
+						</a>
+					</font>
+				</center>
+			</div>
+		</div>
+
+		<div class="row footer_before_row">
+			<div class="col s1"></div>
+			<div class="col s6">
+				<font class="ms_regular" size="1" color="#fff">Horário de Funcionamento</font><br>
+				<font class="ms_regular" size="1" color="#bcbcbc">Segunda à sexta de 8h às 17h</font><br><br>
+				<font class="ms_regular" size="1" color="#fff">Contato - </font>
+				<font class="ms_regular" size="1" color="#bcbcbc">(31) 3314-5200</font>
+				<br><br>
+			</div>
+			<div class="col s5">
+				<font class="ms_regular" size="1" color="#bcbcbc">Rua Alpes, 467 <br> Bairro Nova Suíça <br> Belo Horizonte/MG <br> CEP: 30.421-145</font>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12">
+				<center><font class="ms_regular" size="1" color="#fff">Principais Parceiros:</font></center>
+				<center>
+					<font>
+						<a href="http://www.cefetmg.br/">
+							<img src="/static/images/cefet.png" class="logo_cefet">
+						</a>
+						<a href="http://confies.org.br/institucional/">
+							<img src="/static/images/confies.png" class="logo_confies">
+						</a>
+					</font>
+				</center>
+			</div>
+		</div>
+
+		<div class="row footer_margin footer_facebook">
+			<div class="col s12">
+				<center>
+					<div class="fb-page" data-href="http://www.facebook.com/fundacaocefetminas/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+						<blockquote cite="http://www.facebook.com/fundacaocefetminas/" class="fb-xfbml-parse-ignore">
+							<a href="http://www.facebook.com/fundacaocefetminas/">Fundação CEFETMINAS</a>
+						</blockquote>
+					</div>
+				</center>
+			</div>
+		</div>
+
+	</div>
+
+</footer>
+
+<!-- Facebook -->
+
+<div id="fb-root"></div>
+
+<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12';
+		fjs.parentNode.insertBefore(js, fjs);
+	}
+	(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<!-- Scripts -->
+
+{% compress 'js' %}
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/js/jquery.validate.js"></script>
+<script src="/static/js/materialize.js"></script>
+{% endcompress %}
+
+
+<!-- Feedback - Adicionar Toast -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		let i=0;
+		let toastContent=[];
+		{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+		{% for category, message in messages %}
+		toastContent[i] = $('{{message|safe}}').add($('<button class="btn-flat toast-action"><i class="material-icons">clear</i></button>'));
+		Materialize.toast(toastContent[i], undefined, '{{category}}');
+		i++;
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+	});
+</script>
+
+{% compress 'js' %}
+<script src="/static/js/script.js"></script>
+{% endcompress %}

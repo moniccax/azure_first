@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/table.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/signatureshistory.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<!-- Histórico de Assinaturas -->
+
+		<div class="content">
+
+			<div class="container">
+
+				<div class="row title_margin">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="6">Assinaturas</font>
+						</center>
+					</div>
+				</div>
+
+				{% if signcount %}
+
+				<div class="card card_padding">
+					<table class="bordered striped responsive-table" id="dataTable" cellspacing="0">
+						<thead>
+							<tr>
+								<th>
+									<font class="ms_bold">Evento</font>
+								</th>
+								<th>
+									<font class="ms_bold">Modelo</font>
+								</th>
+								<th>
+									<font class="ms_bold">Documentos</font>
+								</th>
+								<th>
+									<font class="ms_bold">Data de <br>solicitação</font>
+								</th>
+								<th>
+									<font class="ms_bold">Data de <br>assinatura</font>
+								</th>
+								<th>
+									<div class="div_maior_993"><center><font class="ms_bold">Autorização</font></center></div>
+									<div class="div_993"><font class="ms_bold">Autorização</font></div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for signature in signatures %}
+							<tr>
+								<td class="tbody_td_border">{{signature.template.event.title}}</td>
+								<td class="tbody_td_border">
+									<a href="{{url_for('docs.signconfirmation', id=signature.template.id)}}">
+										{{signature.template.name}}
+									</a>
+								</td>
+								<td class="tbody_td_border">{{signature.template.documents.count()}}</td>
+								<td class="tbody_td_border">
+								{%if signature.request_date is not none%}
+									{{gmt_timezone.localize(signature.request_date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+								{%endif%}
+								</td>
+								<td class="tbody_td_border">
+								{%if signature.authorization_date is not none%}
+									{{gmt_timezone.localize(signature.authorization_date).astimezone(timezone).strftime('%d/%m/%Y %H:%M')}}
+								{%endif%}
+								</td>
+								<td class="tbody_last_td_border">
+									{%if signature.authorized%}
+									<div class="div_maior_993">
+										<center>
+											<i class="material-icons">done</i>
+										</center>
+									</div>
+									<div class="div_993">
+										<i class="material-icons">done</i>
+									</div>
+									{%else%}
+									<div class="div_maior_993">
+										<center>
+											<a href="{{url_for('docs.signconfirmation', id=signature.template.id)}}">Autorizar</a>
+										</center>
+									</div>
+									<div class="div_993">
+										<a href="{{url_for('docs.signconfirmation', id=signature.template.id)}}">Autorizar</a>
+									</div>
+									{%endif%}
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+
+				{% else %}
+
+				<div class="row text_margin">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="4">
+								Sua assinatura não está sendo utilizada em documentos.
+							</font>
+						</center>
+					</div>
+				</div>
+
+				{% endif %}
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!--  Scripts-->
+
+		<script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+		<script src="/static/js/sb-admin-datatables.min.js"></script>
+		<script src="/static/js/table.js"></script>
+
+	</div>
+</body>
+</html>

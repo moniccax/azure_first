@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/admin/profile.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/admin/jquery.Jcrop.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu - Navbar -->
+
+		{%include 'header.html'%}
+
+		<div class="container">
+
+			<!-- Atualização de foto do perfil -->
+
+			<div class="row title_margin" id="profile_update_profilepic">
+				<center>
+					<font class="ms_bold title_color" size="6">Atualizar Foto de perfil</font>
+				</center>
+			</div>
+
+			<div class="row card_margin">
+				<div class="col l2"></div>
+				<div class="col s12 m12 l8">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col s12">
+										<center>
+											<p class="sign_title">Foto de perfil:</p>
+											<img id="profilepic" name="profilepic" src="{{user.getprofilepic()}}" width="288px" height="288px">
+										</center>
+									</div>
+								</div>
+
+								<form action="" method="post" enctype=multipart/form-data id="form" name="form" id="form_profilepic">
+									<div class="row">
+										<div class="file-field input-field col s12">
+											<p class="sign_title">Atualizar Foto de perfil:</p>
+											<br>
+											<div class="btn generic_btn">
+												<span><i class="material-icons">attach_file</i></span>
+												<input id="file" name="file" type="file" />
+											</div>
+											<div class="file-path-wrapper">
+												<input class="file-path validate ms_regular" name="profilepicname" id="profilepicname" type="text" placeholder="Nova foto de perfil">
+												<p class="hide" id="pic_error">É obrigatório anexar uma imagem.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<p class="sign_title hide" id="crop_p">Ajuste a sua imagem:</p>
+											<div id="views" class="views"></div>
+											<div class="crop_div">
+												<a class="btn-floating btn-large waves-effect waves-light generic_btn hide crop_btn" id="cropbutton">
+													<i class="material-icons crop_icon">crop</i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<center>
+												<a href="javascript:window.location.reload();" class="btn waves-effect waves-light cancel_btn">
+													Cancelar
+												</a>
+												<button class="btn waves-effect waves-light send_btn" type="submit">
+													Atualizar
+												</button>
+											</center>
+										</div>
+									</div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% if user.category == 3000 %}
+
+			<div class="row title_margin" id="profile_data">
+				<center>
+					<font class="ms_bold title_color" size="6">Dados Pessoais</font>
+				</center>
+			</div>
+
+			<div class="row card_margin">
+				<div class="col l2"></div>
+				<div class="col s12 m12 l8">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="name" name="name" type="text" class="ms_bold" value="{{user.name}}" disabled>
+										<label for="name" class="ms_bold">Nome:</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="cpf" name="cpf" type="text" class="ms_bold" value="{{user.cpf}}" disabled>
+										<label for="cpf" class="ms_bold">CPF:</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="email" name="email" type="text" class="ms_bold" value="{{user.email}}" disabled>
+										<label for="email" class="ms_bold">E-mail:</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% endif %}
+
+			{% if user.category < 3000 %}
+
+
+			<!-- Editar Perfil -->
+
+
+			<div class="row title_margin" id="profile_update_profile">
+				<center>
+					<font class="ms_bold title_color" size="6">Editar Perfil</font>
+				</center>
+			</div>
+
+			<div class="row card_margin">
+				<div class="col l2"></div>
+				<div class="col s12 m12 l8">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+								<form action="{{url_for('admin.profile_edit')}}" method="post" id="form_profile_update">
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="name" name="name" type="text" class="ms_bold" value="{{user.name}}"  disabled>
+											<label for="name" class="ms_bold">Nome:</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="cpf" name="cpf" type="text" class="ms_bold" value="{{user.cpf}}"  disabled>
+											<label for="cpf" class="ms_bold">CPF:</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="email" name="email" type="text" class="ms_bold" value="{{user.email}}">
+											<label for="email" class="ms_bold">E-mail:</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<center>
+												<a href="javascript:window.location.reload();" class="btn waves-effect waves-light cancel_btn">
+													Cancelar
+												</a>
+												<button class="btn waves-effect waves-light send_btn" type="submit">
+													Atualizar
+												</button>
+											</center>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Editar Assinatura -->
+
+
+			<div class="row title_margin" id="profile_update_sign">
+				<center>
+					<font class="ms_bold title_color" size="6">Editar Assinatura</font>
+				</center>
+			</div>
+
+			<div class="row card_margin">
+				<div class="col l2"></div>
+				<div class="col s12 m12 l8">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+								<form action="{{url_for('admin.profile_update_sign')}}" method="post" enctype=multipart/form-data id="form_sign_update">
+									<div class="row">
+										<div class="col s12">
+											<p class="sign_title">Assinatura:</p>
+											{%if user.signature.first().path%}
+											<img id="signatureimg" name="signatureimg" src="/{{user.signature.first().path}}" width="288px" height="72px">
+											{%endif%}
+										</div>
+									</div>
+									<div class="row">
+										<div class="file-field input-field col s12">
+											<p class="sign_title">Editar Assinatura:</p>
+											<br>
+											<div class="btn generic_btn">
+												<span><i class="material-icons">attach_file</i></span>
+												<input type="file" name="signature">
+											</div>
+											<div class="file-path-wrapper">
+												<input class="file-path validate ms_regular" name="signaturefilename" type="text" placeholder="Nova Assinatura">
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col s12">
+											<center>
+												<a href="javascript:window.location.reload();" class="btn waves-effect waves-light cancel_btn">
+													Cancelar
+												</a>
+												<button class="btn waves-effect waves-light send_btn" type="submit">
+													Atualizar
+												</button>
+											</center>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% endif %}
+
+
+			<!-- Alterar Senha -->
+
+			<div class="row title_margin" id="profile_update_password">
+				<center>
+					<font class="ms_bold title_color" size="6">Alterar Senha</font>
+				</center>
+			</div>
+
+			<div class="row">
+				<div class="col l2"></div>
+				<div class="col s12 m12 l8">
+					<div class="card horizontal">
+						<div class="card-stacked">
+							<div class="card-content">
+								<form action="{{url_for('admin.profile_change_password')}}" method="post" id="form_profile_changePass">
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="password" name="password" type="password" class="ms_bold">
+											<label for="password" class="ms_bold">Senha atual</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="newpassword" name="newpassword" type="password" class="ms_bold">
+											<label for="newpassword" class="ms_bold">Nova senha</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="newpassword2" name="newpassword2" type="password" class="ms_bold">
+											<label for="newpassword2" class="ms_bold">Confirme a nova senha</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col s12">
+											<center>
+												<a href="javascript:window.location.reload();" class="btn waves-effect waves-light cancel_btn">
+													Cancelar
+												</a>
+												<button class="btn waves-effect waves-light send_btn" type="submit">
+													Atualizar
+												</button>
+											</center>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/js/admin/jquery.Jcrop.min.js"></script>
+		<script src="/static/js/admin/profile.js"></script>
+
+	</div>
+</body>
+</html>

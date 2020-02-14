@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="theme-color" content="#303565">
+	<title>Fundação CEFETMINAS</title>
+
+	<!-- CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/modal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="/static/css/docs/event.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Favicon -->
+	<link href="/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="manifest" href="/static/manifest.json">
+	<link rel="apple-touch-icon" href="/static/images/icons/icon-apple.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonexsmax_splash.png" type="image/png" />
+	<!-- iPhone Xs Max (2688 x 1242) -->
+	<link
+	      rel="apple-touch-startup-image"
+	      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+	      href="/static/images/splashscreens/splash/Default-Landscape-2688h~iphone.png"
+	    />
+
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphonexr_splash.png" type="image/png" />
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/iphonex_splash.png" type="image/png"/>
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/static/images/splashscreens/splash/iphoneplus_splash.png" type="image/png" />
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/static/images/splashscreens/splash/750x1334.png" type="image/png" />
+	<!-- iPhone  1920x1080 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+		 href="/static/images/splashscreens/1920x1080.png"
+	 />
+	 <!-- iPhone  1080x2336 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 540px) and (device-height: 1168px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1080x2336.png"
+	 />
+	 <!-- iPhone  1242x2688 -->
+	<link
+		 rel="apple-touch-startup-image"
+		 media="screen and (device-width: 621px) and (device-height: 1344px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+		 href="/static/images/splashscreens/1242x2688.png"
+	 />
+		<!-- iPhone  2436x1125 -->
+	 <link
+			 rel="apple-touch-startup-image"
+			 media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+			 href="/static/images/splashscreens/splash/2436h.png"
+		/>
+
+		<!-- iPhone  2732x2732 -->
+	<link href="/static/images/splashscreens/splash/2732.png" media="(device-width: 1366px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/static/images/splashscreens/splash/iphone6_splash.png"type="image/png" />
+	<link href="/static/images/splashscreens/splash/Default~iphone.png" media="(device-width: 160px) and (device-height: 240px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/static/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+</head>
+
+<body class="default_bg">
+	<div class="default_bg_overlay">
+
+		<!-- Menu -->
+
+		{% include 'header.html' %}
+
+
+		<!-- Botão: adicionar novo evento -->
+
+		{% if user.category < 2500 %}
+
+		<a class="modal-trigger waves-effect waves-light btn-floating btn-large red tooltipped add_event_btn" data-position="left" data-delay="50" data-tooltip="Adicionar evento" href="#modal_add_event">
+			<i class="material-icons">edit</i>
+		</a>
+
+		{% endif %}
+
+		<!-- Cartões de Eventos -->
+
+		<div class="content">
+
+			<div class="container">
+
+				<div class="row title_margin">
+					<div class="col s12">
+						<center>
+							<font class="ms_bold title_color" size="6">Eventos</font>
+						</center>
+					</div>
+				</div>
+
+				<!-- Eventos cadastrados pelo usuário (Administrador ou Colaborador) -->
+
+				{% if user.category < 2500 %}
+
+				<div class="row">
+
+					{% if events_own|length %}
+
+					<font class="ms_bold title_color" size="5">
+						<p>Coordenador de:</p>
+					</font>
+
+					{% endif %}
+
+				</div>
+
+				<div class="row">
+
+					{% for event in events_own %}
+
+					<div class="col s12 m12 l6">
+						<div class="card">
+							<div class="card-content card_min_height">
+								<a href="{{url_for('docs.templates',id=event.id)}}#event_details" class="a_color">
+									<div class="row">
+										<div class="col s9 m9 l10">
+											<font class="ms_bold" size="4">{{event.title[0:30]}}</font>
+										</div>
+										<div class="col s3 m3 l2">
+											<button data-target="modal{{event.id}}" class="btn-floating btn-large modal-trigger tooltipped delete_btn" data-position="left" data-delay="50" data-tooltip="Excluir">
+												<i class="material-icons delete_btn_icon">delete</i>
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<font class="ms_medium">{{event.abstract[0:150]}}</font>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="card-action">
+								<a>&nbsp;</a>
+								<a href="{{url_for('docs.templates',id=event.id)}}#event_templates" class="ms_bold right">
+									{%if event.templates.count()==0%}Nenhum{%else%}{{event.templates.count()}}{%endif%} Modelo{%if event.templates.count()>1%}s{%endif%}
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal - CONFIRMAR EXCLUSÃO DE EVENTOS -->
+
+					<div id="modal{{event.id}}" class="modal">
+						<div class="modal-content">
+							<font class="ms_bold" size="3">Deseja realmente excluir o evento: {{event.title}}?</font>
+						</div>
+						<div class="modal-footer">
+							<a href="{{url_for('docs.delete_event', id=event.id)}}" class="modal-action modal-close waves-effect waves-green btn-flat ms_medium">Sim</a>
+							<a class="modal-action modal-close waves-effect waves-red btn-flat ms_medium">Não</a>
+						</div>
+					</div>
+
+					{% endfor %}
+
+				</div>
+
+				<!-- Modal - INSERIR NOVO EVENTO -->
+
+				<div id="modal_add_event" class="modal modal-fixed-footer">
+
+					<div class="modal-content">
+
+						<div class="div_maior_993">
+							<div class="fixed-action-btn">
+								<a class="modal-action modal-close waves-effect waves-light btn-large btn-floating clear_btn">
+									<i class="material-icons">clear</i>
+								</a>
+							</div>
+						</div>
+
+						<form action="{{url_for('docs.create_event')}}" method="post" id="form_event">
+
+							<div class="row modal_title_margin">
+								<div class="col s12">
+									<center>
+										<font class="ms_bold" size="5">
+											Cadastro de Eventos
+										</font>
+									</center>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="title" name="title" type="text" class="ms_bold">
+									<label for="title" class="ms_bold">Título *</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="coordinator" name="coordinator" type="text" class="ms_bold">
+									<label for="coordinator" class="ms_bold">Nome do Coordenador</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m8 l8">
+									<textarea id="abstract" name="abstract" class="materialize-textarea ms_bold"></textarea>
+									<label for="abstract" class="ms_bold">Resumo *</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col s0 m2 l2"></div>
+								<div class="input-field col s12 m4 l4">
+									<p>Data de Início</p>
+									<input id="startDate" name="startDate" type="date" class="ms_bold">
+								</div>
+								<div class="input-field col s12 m4 l4">
+									<p>Data de Fim</p>
+									<input id="endDate" name="endDate" type="date" class="ms_bold">
+									<p class="p_error_style hide" id="endDateError">
+										A data de término não pode ser anterior à data de início do evento.
+									</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="workload" name="workload" type="text" class="ms_bold">
+									<label for="workload" class="ms_bold">Carga Horária (horas)</label>
+									<p class="p_error_style hide" id="workloadError">
+										A carga horária não pode ser expressa por um número negativo.
+									</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="place" name="place" type="text" class="ms_bold">
+									<label for="place" class="ms_bold">Local de Realização</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="input-field col s12 m12 l8">
+									<input id="participantsNumber" name="participantsNumber" type="number" class="ms_bold">
+									<label for="participantsNumber" class="ms_bold">Número de Participantes</label>
+									<p class="p_error_style hide" id="participantsNumberError">
+										O número de participantes não pode ser negativo.
+									</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col l2"></div>
+								<div class="col s12 m12 l8">
+									<font class="ms_bold" color="#000" size="2">* Campos obrigatórios.</font>
+								</div>
+							</div>
+
+							<div class="row send_cancel_margin">
+								<div class="col s12">
+									<center>
+										<a href="javascript:window.location.reload();" class="modal-action modal-close btn waves-effect waves-light cancel_btn">
+											Cancelar
+										</a>
+										<button class="btn waves-effect waves-light send_btn" type="submit" id="create_event">
+											Enviar
+										</button>
+									</center>
+								</div>
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+
+				{% endif %}
+
+				<!-- Eventos dos quais o usuário participa -->
+
+				{% if events|length  %}
+
+				<div class="row events_margin">
+					<font class="ms_bold title_color" size="5" id="teste">
+						<p>Participante de:</p>
+					</font>
+				</div>
+
+				<div class="row">
+
+					{% for event in events %}
+
+					<div class="col s12 m12 l6">
+						<div class="card">
+							<div class="card-content">
+								<a href="{{url_for('docs.documents', id=event.id)}}" class="a_color">
+									<div class="row">
+										<div class="col s12">
+											<font class="ms_bold" size="4">{{event.title[0:30]}}</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<font class="ms_medium">{{event.abstract[0:50]}}</font>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="card-action">
+								<a>&nbsp;</a>
+								<a href="{{url_for('docs.documents', id=event.id)}}" class="ms_bold right">
+									Documentos
+								</a>
+							</div>
+						</div>
+					</div>
+
+					{% endfor %}
+
+				</div>
+
+				{% endif %}
+
+			</div>
+
+			<div class="push"></div>
+
+		</div>
+
+		<!-- Footer -->
+
+		{% include 'footer.html' %}
+
+		<!-- Scripts -->
+
+		<script src="/static/js/docs/events.js"></script>
+
+		<!-- Abre o modal de notificações (se tiver alguma) -->
+
+		{% if (notifications is defined) and notifications %}
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if(window.location.href.indexOf("success") == -1) {
+					$('#modalnotifications').modal('open')
+				}
+			});
+		</script>
+
+		{% endif %}
+
+	</div>
+</body>
+</html>
